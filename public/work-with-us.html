@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Work with EOAI Lab. We're a startup building Enterprise-Owned Artificial Intelligence — join us and tell us about yourself."
+    />
+    <meta name="theme-color" content="#07080d" />
+    <title>Work with us — EOAI Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="nav">
+      <a class="brand" href="index.html#top" aria-label="EOAI Lab home"
+        >EOAI <span>Lab</span></a
+      ><button class="menu" aria-label="Open navigation" aria-expanded="false">
+        <i></i><i></i>
+      </button>
+      <nav>
+        <a href="index.html#eoai">EOAI</a><a href="index.html#services">Capabilities</a
+        ><a href="index.html#solutions">Solutions</a
+        ><a href="index.html#case-study">Case study</a><a href="index.html#about">About</a
+        ><a href="work-with-us.html">Work with us</a>
+      </nav>
+      <a class="nav-cta" href="#apply">Apply now <b>↗</b></a>
+    </header>
+
+    <main id="top">
+      <section class="apply" id="apply">
+        <div class="apply-intro reveal">
+          <p class="eyebrow"><span></span> We're hiring</p>
+          <h1>Build what<br />you'll <em>own.</em></h1>
+          <p class="apply-lede">
+            EOAI Lab is a small, fast-moving startup building
+            Enterprise-Owned Artificial Intelligence — private models,
+            agents, and infrastructure for companies that refuse to rent
+            their intelligence. There are no layers here, no legacy
+            process: just an early team shipping real systems into
+            production, learning the full stack along the way, and growing
+            with the company from day one. If you want direct impact and
+            real ownership over what you build, tell us about yourself
+            below — we read every submission ourselves.
+          </p>
+        </div>
+
+        <form class="apply-form" id="apply-form" novalidate>
+          <div class="field">
+            <label for="f-name">Full name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required maxlength="199" />
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" required />
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+90 5xx xxx xx xx" maxlength="49" />
+          </div>
+          <div class="field">
+            <label for="f-linkedin">LinkedIn / portfolio</label>
+            <input id="f-linkedin" name="linkedin" type="url" placeholder="https://linkedin.com/in/..." maxlength="299" />
+          </div>
+          <div class="field full">
+            <label for="f-position">Area you're interested in</label>
+            <select id="f-position" name="position" required>
+              <option value="" disabled selected>Choose an area</option>
+              <option>AI Strategy &amp; Delivery</option>
+              <option>Machine Learning</option>
+              <option>Agents &amp; Automation</option>
+              <option>Infrastructure &amp; Security</option>
+              <option>Design &amp; Brand</option>
+              <option>Business Development</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-message">A short note</label>
+            <textarea id="f-message" name="message" placeholder="Why EOAI Lab, and what would you bring?" maxlength="4999"></textarea>
+          </div>
+          <!--
+            Honeypot: real users never see or fill this field. The name/id/label
+            are deliberately meaningless — real-looking labels like "Company" get
+            silently auto-filled by browsers' saved-profile autofill (especially
+            on mobile), which made the honeypot reject genuine submissions.
+          -->
+          <div class="field hp" aria-hidden="true">
+            <label for="f-hp-field">Leave this field blank</label>
+            <input id="f-hp-field" name="hp_field" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="apply-submit">
+            <button type="submit">Send application <b>↗</b></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+
+      <div class="work-foot">
+        <a class="brand" href="index.html#top">EOAI <span>Lab</span></a>
+        <a href="mailto:info@eoailab.com">info@eoailab.com</a>
+        <span>© 2026 EOAI Lab</span>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="apply.js"></script>
+  </body>
+</html>
