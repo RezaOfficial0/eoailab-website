@@ -30,6 +30,33 @@ service cloud.firestore {
         request.resource.data.createdAt == request.time;
     }
 
+    // Client leads submitted from the "Become a client" page.
+    // Kept in its own collection, separate from "applications" — anyone can
+    // submit a well-formed lead (create-only), nobody can read, edit, or
+    // delete from the client — only visible via the Firebase console or
+    // Admin SDK.
+    match /clients/{clientId} {
+      allow read, update, delete: if false;
+
+      allow create: if
+        request.resource.data.keys().hasOnly(
+          ['name', 'email', 'phone', 'company', 'message', 'createdAt']
+        ) &&
+        request.resource.data.name is string &&
+        request.resource.data.name.size() > 0 &&
+        request.resource.data.name.size() < 200 &&
+        request.resource.data.email is string &&
+        request.resource.data.email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$') &&
+        request.resource.data.phone is string &&
+        request.resource.data.phone.size() < 50 &&
+        request.resource.data.company is string &&
+        request.resource.data.company.size() > 0 &&
+        request.resource.data.company.size() < 200 &&
+        request.resource.data.message is string &&
+        request.resource.data.message.size() < 5000 &&
+        request.resource.data.createdAt == request.time;
+    }
+
     // Everything else stays closed.
     match /{document=**} {
       allow read, write: if false;

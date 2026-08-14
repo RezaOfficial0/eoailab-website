@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Become an EOAI Lab client. Tell us about your business and what you'd want us to build — we read every submission ourselves."
+    />
+    <meta name="theme-color" content="#07080d" />
+    <title>Become a client — EOAI Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="nav">
+      <a class="brand" href="index.html#top" aria-label="EOAI Lab home"
+        >EOAI <span>Lab</span></a
+      ><button class="menu" aria-label="Open navigation" aria-expanded="false">
+        <i></i><i></i>
+      </button>
+      <nav>
+        <a href="index.html#eoai">EOAI</a><a href="index.html#services">Capabilities</a
+        ><a href="index.html#solutions">Solutions</a
+        ><a href="index.html#case-study">Case study</a><a href="index.html#about">About</a
+        ><a href="work-with-us.html">Work with us</a>
+      </nav>
+      <a class="nav-cta" href="#apply">Get started <b>↗</b></a>
+    </header>
+
+    <main id="top">
+      <section class="apply" id="apply">
+        <div class="apply-intro reveal">
+          <p class="eyebrow"><span></span> Let's talk</p>
+          <h1>Own what<br />makes you <em>different.</em></h1>
+          <p class="apply-lede">
+            EOAI Lab builds Enterprise-Owned Artificial Intelligence —
+            private models, agents, and infrastructure for companies that
+            refuse to rent their intelligence. Tell us a bit about your
+            business and what you'd want us to build, and we'll follow up
+            to find the right next step — we read every submission
+            ourselves.
+          </p>
+        </div>
+
+        <form class="apply-form" id="client-form" novalidate>
+          <div class="field">
+            <label for="c-name">Full name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required maxlength="199" />
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone</label>
+            <input id="c-phone" name="phone" type="tel" autocomplete="tel" placeholder="+90 5xx xxx xx xx" maxlength="49" />
+          </div>
+          <div class="field">
+            <label for="c-company">Company</label>
+            <input id="c-company" name="company" type="text" autocomplete="organization" placeholder="Company name" required maxlength="199" />
+          </div>
+          <div class="field full">
+            <label for="c-message">A short note</label>
+            <textarea id="c-message" name="message" placeholder="What would you want us to build?" maxlength="4999"></textarea>
+          </div>
+          <!--
+            Honeypot: real users never see or fill this field. The name/id/label
+            are deliberately meaningless — real-looking labels like "Company" get
+            silently auto-filled by browsers' saved-profile autofill (especially
+            on mobile), which made the honeypot reject genuine submissions.
+          -->
+          <div class="field hp" aria-hidden="true">
+            <label for="c-hp-field">Leave this field blank</label>
+            <input id="c-hp-field" name="hp_field" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="apply-submit">
+            <button type="submit">Send <b>↗</b></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+
+      <div class="work-foot">
+        <a class="brand" href="index.html#top">EOAI <span>Lab</span></a>
+        <a href="mailto:info@eoailab.com">info@eoailab.com</a>
+        <span>© 2026 EOAI Lab</span>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="apply-client.js"></script>
+  </body>
+</html>
