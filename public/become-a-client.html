@@ -17,29 +17,33 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-i18n-title="client.metaTitle">
     <div class="noise" aria-hidden="true"></div>
     <header class="nav">
-      <a class="brand" href="index.html#top" aria-label="EOAI Lab home"
+      <a class="brand" href="index.html#top" data-i18n-aria-label="nav.brandAria" aria-label="EOAI Lab home"
         >EOAI <span>Lab</span></a
-      ><button class="menu" aria-label="Open navigation" aria-expanded="false">
+      ><button class="menu" data-i18n-aria-label="nav.menuAria" aria-label="Open navigation" aria-expanded="false">
         <i></i><i></i>
       </button>
       <nav>
-        <a href="index.html#eoai">EOAI</a><a href="index.html#services">Capabilities</a
-        ><a href="index.html#solutions">Solutions</a
-        ><a href="index.html#case-study">Case study</a><a href="index.html#about">About</a
-        ><a href="work-with-us.html">Work with us</a>
+        <a href="index.html#eoai">EOAI</a><a href="index.html#services" data-i18n="nav.capabilities">Capabilities</a
+        ><a href="index.html#solutions" data-i18n="nav.solutions">Solutions</a
+        ><a href="index.html#case-study" data-i18n="nav.caseStudy">Case study</a><a href="index.html#about" data-i18n="nav.about">About</a
+        ><a href="work-with-us.html" data-i18n="nav.workWithUs">Work with us</a>
       </nav>
-      <a class="nav-cta" href="#apply">Get started <b>↗</b></a>
+      <a class="nav-cta" href="#apply"><span data-i18n="client.navCta">Get started</span> <b>↗</b></a>
+      <div class="lang-toggle" role="group" aria-label="Language / Dil">
+        <button type="button" class="lang-btn" data-lang="en">🇬🇧<span>EN</span></button>
+        <button type="button" class="lang-btn" data-lang="tr">🇹🇷<span>TR</span></button>
+      </div>
     </header>
 
     <main id="top">
       <section class="apply" id="apply">
         <div class="apply-intro reveal">
-          <p class="eyebrow"><span></span> Let's talk</p>
-          <h1>Own what<br />makes you <em>different.</em></h1>
-          <p class="apply-lede">
+          <p class="eyebrow"><span></span> <span data-i18n="client.eyebrow">Let's talk</span></p>
+          <h1 data-i18n="client.h1">Own what<br />makes you <em>different.</em></h1>
+          <p class="apply-lede" data-i18n="client.lede">
             EOAI Lab builds Enterprise-Owned Artificial Intelligence —
             private models, agents, and infrastructure for companies that
             refuse to rent their intelligence. Tell us a bit about your
@@ -51,24 +55,24 @@
 
         <form class="apply-form" id="client-form" novalidate>
           <div class="field">
-            <label for="c-name">Full name</label>
-            <input id="c-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required maxlength="199" />
+            <label for="c-name" data-i18n="client.labelName">Full name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" data-i18n-placeholder="client.placeholderName" placeholder="Jane Doe" required maxlength="199" />
           </div>
           <div class="field">
-            <label for="c-email">Email</label>
-            <input id="c-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required />
+            <label for="c-email" data-i18n="client.labelEmail">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" data-i18n-placeholder="client.placeholderEmail" placeholder="jane@company.com" required />
           </div>
           <div class="field">
-            <label for="c-phone">Phone</label>
+            <label for="c-phone" data-i18n="client.labelPhone">Phone</label>
             <input id="c-phone" name="phone" type="tel" autocomplete="tel" placeholder="+90 5xx xxx xx xx" maxlength="49" />
           </div>
           <div class="field">
-            <label for="c-company">Company</label>
-            <input id="c-company" name="company" type="text" autocomplete="organization" placeholder="Company name" required maxlength="199" />
+            <label for="c-company" data-i18n="client.labelCompany">Company</label>
+            <input id="c-company" name="company" type="text" autocomplete="organization" data-i18n-placeholder="client.placeholderCompany" placeholder="Company name" required maxlength="199" />
           </div>
           <div class="field full">
-            <label for="c-message">A short note</label>
-            <textarea id="c-message" name="message" placeholder="What would you want us to build?" maxlength="4999"></textarea>
+            <label for="c-message" data-i18n="client.labelMessage">A short note</label>
+            <textarea id="c-message" name="message" data-i18n-placeholder="client.placeholderMessage" placeholder="What would you want us to build?" maxlength="4999"></textarea>
           </div>
           <!--
             Honeypot: real users never see or fill this field. The name/id/label
@@ -82,7 +86,7 @@
           </div>
 
           <div class="apply-submit">
-            <button type="submit">Send <b>↗</b></button>
+            <button type="submit"><span data-i18n="client.submitBtn">Send</span> <b>↗</b></button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </div>
         </form>
@@ -94,6 +98,7 @@
         <span>© 2026 EOAI Lab</span>
       </div>
     </main>
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
     <script type="module" src="apply-client.js"></script>
   </body>

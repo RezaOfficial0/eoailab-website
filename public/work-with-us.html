@@ -17,29 +17,33 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-i18n-title="work.metaTitle">
     <div class="noise" aria-hidden="true"></div>
     <header class="nav">
-      <a class="brand" href="index.html#top" aria-label="EOAI Lab home"
+      <a class="brand" href="index.html#top" data-i18n-aria-label="nav.brandAria" aria-label="EOAI Lab home"
         >EOAI <span>Lab</span></a
-      ><button class="menu" aria-label="Open navigation" aria-expanded="false">
+      ><button class="menu" data-i18n-aria-label="nav.menuAria" aria-label="Open navigation" aria-expanded="false">
         <i></i><i></i>
       </button>
       <nav>
-        <a href="index.html#eoai">EOAI</a><a href="index.html#services">Capabilities</a
-        ><a href="index.html#solutions">Solutions</a
-        ><a href="index.html#case-study">Case study</a><a href="index.html#about">About</a
-        ><a href="work-with-us.html">Work with us</a>
+        <a href="index.html#eoai">EOAI</a><a href="index.html#services" data-i18n="nav.capabilities">Capabilities</a
+        ><a href="index.html#solutions" data-i18n="nav.solutions">Solutions</a
+        ><a href="index.html#case-study" data-i18n="nav.caseStudy">Case study</a><a href="index.html#about" data-i18n="nav.about">About</a
+        ><a href="work-with-us.html" data-i18n="nav.workWithUs">Work with us</a>
       </nav>
-      <a class="nav-cta" href="#apply">Apply now <b>↗</b></a>
+      <a class="nav-cta" href="#apply"><span data-i18n="work.navCta">Apply now</span> <b>↗</b></a>
+      <div class="lang-toggle" role="group" aria-label="Language / Dil">
+        <button type="button" class="lang-btn" data-lang="en">🇬🇧<span>EN</span></button>
+        <button type="button" class="lang-btn" data-lang="tr">🇹🇷<span>TR</span></button>
+      </div>
     </header>
 
     <main id="top">
       <section class="apply" id="apply">
         <div class="apply-intro reveal">
-          <p class="eyebrow"><span></span> We're hiring</p>
-          <h1>Build what<br />you'll <em>own.</em></h1>
-          <p class="apply-lede">
+          <p class="eyebrow"><span></span> <span data-i18n="work.eyebrow">We're hiring</span></p>
+          <h1 data-i18n="work.h1">Build what<br />you'll <em>own.</em></h1>
+          <p class="apply-lede" data-i18n="work.lede">
             EOAI Lab is a small, fast-moving startup building
             Enterprise-Owned Artificial Intelligence — private models,
             agents, and infrastructure for companies that refuse to rent
@@ -54,37 +58,37 @@
 
         <form class="apply-form" id="apply-form" novalidate>
           <div class="field">
-            <label for="f-name">Full name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required maxlength="199" />
+            <label for="f-name" data-i18n="work.labelName">Full name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" data-i18n-placeholder="work.placeholderName" placeholder="Jane Doe" required maxlength="199" />
           </div>
           <div class="field">
-            <label for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" required />
+            <label for="f-email" data-i18n="work.labelEmail">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" data-i18n-placeholder="work.placeholderEmail" placeholder="jane@email.com" required />
           </div>
           <div class="field">
-            <label for="f-phone">Phone</label>
+            <label for="f-phone" data-i18n="work.labelPhone">Phone</label>
             <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+90 5xx xxx xx xx" maxlength="49" />
           </div>
           <div class="field">
-            <label for="f-linkedin">LinkedIn / portfolio</label>
+            <label for="f-linkedin" data-i18n="work.labelLinkedin">LinkedIn / portfolio</label>
             <input id="f-linkedin" name="linkedin" type="url" placeholder="https://linkedin.com/in/..." maxlength="299" />
           </div>
           <div class="field full">
-            <label for="f-position">Area you're interested in</label>
+            <label for="f-position" data-i18n="work.labelPosition">Area you're interested in</label>
             <select id="f-position" name="position" required>
-              <option value="" disabled selected>Choose an area</option>
-              <option>AI Strategy &amp; Delivery</option>
-              <option>Machine Learning</option>
-              <option>Agents &amp; Automation</option>
-              <option>Infrastructure &amp; Security</option>
-              <option>Design &amp; Brand</option>
-              <option>Business Development</option>
-              <option>Something else</option>
+              <option value="" disabled selected data-i18n="work.optChoose">Choose an area</option>
+              <option data-i18n="work.opt1">AI Strategy &amp; Delivery</option>
+              <option data-i18n="work.opt2">Machine Learning</option>
+              <option data-i18n="work.opt3">Agents &amp; Automation</option>
+              <option data-i18n="work.opt4">Infrastructure &amp; Security</option>
+              <option data-i18n="work.opt5">Design &amp; Brand</option>
+              <option data-i18n="work.opt6">Business Development</option>
+              <option data-i18n="work.opt7">Something else</option>
             </select>
           </div>
           <div class="field full">
-            <label for="f-message">A short note</label>
-            <textarea id="f-message" name="message" placeholder="Why EOAI Lab, and what would you bring?" maxlength="4999"></textarea>
+            <label for="f-message" data-i18n="work.labelMessage">A short note</label>
+            <textarea id="f-message" name="message" data-i18n-placeholder="work.placeholderMessage" placeholder="Why EOAI Lab, and what would you bring?" maxlength="4999"></textarea>
           </div>
           <!--
             Honeypot: real users never see or fill this field. The name/id/label
@@ -98,7 +102,7 @@
           </div>
 
           <div class="apply-submit">
-            <button type="submit">Send application <b>↗</b></button>
+            <button type="submit"><span data-i18n="work.submitBtn">Send application</span> <b>↗</b></button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </div>
         </form>
@@ -110,6 +114,7 @@
         <span>© 2026 EOAI Lab</span>
       </div>
     </main>
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
     <script type="module" src="apply.js"></script>
   </body>

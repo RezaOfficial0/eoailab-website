@@ -41,15 +41,18 @@ if (form) {
     const position = form.position.value.trim();
     const message = form.message.value.trim();
 
+    // Falls back to the English copy if i18n.js hasn't loaded for some reason.
+    const t = (key, fallback) => (window.i18n ? window.i18n.t(key) : fallback);
+
     if (!name || !email || !position) {
-      statusEl.textContent = "Please fill in your name, email, and area of interest.";
+      statusEl.textContent = t("work.statusMissing", "Please fill in your name, email, and area of interest.");
       statusEl.className = "form-status err";
       return;
     }
 
     const submitBtn = form.querySelector("button[type=submit]");
     submitBtn.disabled = true;
-    statusEl.textContent = "Sending…";
+    statusEl.textContent = t("work.statusSending", "Sending…");
     statusEl.className = "form-status";
 
     try {
@@ -63,11 +66,11 @@ if (form) {
         createdAt: serverTimestamp(),
       });
       form.reset();
-      statusEl.textContent = "Thanks — we've got it, and we'll be in touch.";
+      statusEl.textContent = t("work.statusThanks", "Thanks — we've got it, and we'll be in touch.");
       statusEl.className = "form-status ok";
     } catch (err) {
       console.error("Application submit failed:", err);
-      statusEl.textContent = "Something went wrong. Please email info@eoailab.com instead.";
+      statusEl.textContent = t("work.statusError", "Something went wrong. Please email info@eoailab.com instead.");
       statusEl.className = "form-status err";
     } finally {
       submitBtn.disabled = false;
