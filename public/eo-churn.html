@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>document.documentElement.classList.add("js")</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EO-Churn by EOAI Lab: a student dropout early-warning system that runs on your own data, in your own environment."
+    />
+    <meta name="theme-color" content="#07080d" />
+    <title>EOAI Lab</title>
+    <link rel="icon" href="logos/eoai-icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-i18n-title="churn.metaTitle">
+    <div class="noise" aria-hidden="true"></div>
+    <header class="nav">
+      <a class="brand" href="index.html#top" data-i18n-aria-label="nav.brandAria" aria-label="EOAI Lab home"
+        ><img src="logos/eoai-wordmark.svg" alt="EOAI Lab" width="1576" height="380" /></a
+      ><button class="menu" data-i18n-aria-label="nav.menuAria" aria-label="Open navigation" aria-expanded="false">
+        <i></i><i></i>
+      </button>
+      <nav>
+        <a href="index.html#eoai">EOAI</a><a href="eo-churn.html" class="active" aria-current="page" data-i18n="nav.eoChurn">EO-Churn</a
+        ><a href="index.html#services" data-i18n="nav.capabilities">Capabilities</a
+        ><a href="index.html#solutions" data-i18n="nav.solutions">Solutions</a
+        ><a href="index.html#how-it-works" data-i18n="nav.caseStudy">How it works</a><a href="index.html#about" data-i18n="nav.about">About</a
+        ><a href="work-with-us.html" data-i18n="nav.workWithUs">Work with us</a>
+      </nav>
+      <a class="nav-cta" href="become-a-client.html#apply"><span data-i18n="churn.navCta">Request a backtest</span> <b>↗</b></a>
+      <div class="lang-toggle" role="group" aria-label="Language / Dil">
+        <button type="button" class="lang-btn" data-lang="en">🇬🇧<span>EN</span></button>
+        <button type="button" class="lang-btn" data-lang="tr">🇹🇷<span>TR</span></button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero product-hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> <span data-i18n="churn.heroEyebrow">EO-Churn · Student dropout early warning</span></p>
+          <h1 data-i18n="churn.heroH1">Catch the dropout<br /><em>before it happens.</em></h1>
+          <p class="lede" data-i18n="churn.heroLede">Which student is about to leave, why, and what your team should do this week. Every morning, on your own data.</p>
+          <div class="actions">
+            <a class="button primary" href="become-a-client.html#apply"><span data-i18n="churn.ctaBacktest">Request a free backtest</span> <b>↗</b></a
+            ><a class="button ghost" href="#flow"><span data-i18n="churn.heroCtaGhost">See how it works</span> <b>↓</b></a>
+          </div>
+        </div>
+        <figure class="hero-shot">
+          <img src="eo-churn-risk-list.png" width="1213" height="830" data-i18n-alt="churn.shot1Alt" alt="EO-Churn daily risk list: students ranked by dropout probability, each with its top three SHAP reasons" />
+        </figure>
+      </section>
+
+      <section class="intro section-pad" id="problem">
+        <div class="section-kicker">
+          <span>01</span>
+          <p data-i18n="churn.k01">The problem</p>
+        </div>
+        <div class="intro-grid">
+          <h2 class="display reveal" data-i18n="churn.probH2">A student doesn’t leave<br /><em>overnight.</em></h2>
+          <div class="intro-side reveal">
+            <p data-i18n="churn.probP1">First, replies to messages slow down. Mock-exam scores drop, a payment runs late, attendance thins out. These signals are already recorded in your systems, but nowhere are they read together.</p>
+            <p data-i18n="churn.probP2">Noticing is left to a mentor’s intuition, and it usually comes too late. A student who leaves doesn’t cancel one payment; they erase the rest of the term.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-pad">
+        <div class="section-kicker light">
+          <span>02</span>
+          <p data-i18n="churn.k02">Every morning</p>
+        </div>
+        <div class="services-head">
+          <h2 class="display reveal" data-i18n="churn.qH2">Three questions,<br /><em>answered daily.</em></h2>
+          <p data-i18n="churn.qP">EO-Churn doesn’t send anyone a message. It ranks, gives the reason, and prepares the draft. The decision to send always stays with your team.</p>
+        </div>
+        <div class="service-grid">
+          <article><span>01</span><h3 data-i18n="churn.q1T">Who</h3><p data-i18n="churn.q1D">A calibrated dropout probability for every active student, ranked by risk. Not a binary “at risk / not at risk” label.</p></article>
+          <article><span>02</span><h3 data-i18n="churn.q2T">Why</h3><p data-i18n="churn.q2D">The top three reasons for each student, by column: “message reply time +0.18”, “mock-exam trend +0.17”.</p></article>
+          <article><span>03</span><h3 data-i18n="churn.q3T">What to do</h3><p data-i18n="churn.q3D">An outreach draft picked from your own approved templates, with a success measure for the conversation.</p></article>
+        </div>
+      </section>
+
+      <section class="solutions section-pad">
+        <div class="section-kicker">
+          <span>03</span>
+          <p data-i18n="churn.k03">The dashboard</p>
+        </div>
+        <div class="solutions-head">
+          <h2 class="display reveal" data-i18n="churn.dashH2">Everything in<br /><em>one place.</em></h2>
+          <p data-i18n="churn.dashP">Three views: the daily risk list, every student including those below the threshold, and model health: which threshold ran, how many rows were quarantined, when the last run happened.</p>
+        </div>
+        <div class="solution-shots">
+          <figure>
+            <img src="eo-churn-risk-list.png" width="1213" height="830" loading="lazy" data-i18n-alt="churn.shot1Alt" alt="EO-Churn daily risk list: students ranked by dropout probability, each with its top three SHAP reasons" />
+            <figcaption data-i18n="churn.shot1Cap">Daily risk list: ranked by probability, with the top three reasons, plan and membership on every row.</figcaption>
+          </figure>
+          <figure>
+            <img src="eo-churn-draft.png" width="650" height="500" loading="lazy" data-i18n-alt="churn.shot2Alt" alt="EO-Churn outreach draft: a mentor message chosen from approved templates, marked as not sent" />
+            <figcaption data-i18n="churn.shot2Cap">Outreach draft: chosen from approved templates. There is no send button on the dashboard.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="process section-pad" id="flow">
+        <div class="section-kicker">
+          <span>04</span>
+          <p data-i18n="churn.k04">How it works</p>
+        </div>
+        <div class="process-head">
+          <h2 class="display reveal" data-i18n="churn.flowH2">From your export<br /><em>to a mentor’s call.</em></h2>
+          <p data-i18n="churn.flowP">No new data collection. EO-Churn reads what your systems already record.</p>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><div><h3 data-i18n="churn.s1T">Export</h3><p data-i18n="churn.s1D">A CSV or LMS export from the system you already use is enough.</p></div><b>↘</b></li>
+          <li><span>02</span><div><h3 data-i18n="churn.s2T">Column mapping</h3><p data-i18n="churn.s2D">Your headers are mapped to the system’s schema once, with a single mapping file.</p></div><b>↘</b></li>
+          <li><span>03</span><div><h3 data-i18n="churn.s3T">Training</h3><p data-i18n="churn.s3D">The model learns from your own student history, not another institution’s. Unusable rows are set aside and reported to you.</p></div><b>↘</b></li>
+          <li><span>04</span><div><h3 data-i18n="churn.s4T">Daily scoring</h3><p data-i18n="churn.s4D">Every active student is re-scored automatically each morning.</p></div><b>↘</b></li>
+          <li><span>05</span><div><h3 data-i18n="churn.s5T">Dashboard and e-mail</h3><p data-i18n="churn.s5D">The ranked list, the reasons and the drafts land in front of your team.</p></div><b>↘</b></li>
+          <li><span>06</span><div><h3 data-i18n="churn.s6T">Mentor action</h3><p data-i18n="churn.s6D">The mentor reaches out and logs the outcome on the dashboard.</p></div><b>↘</b></li>
+          <li><span>07</span><div><h3 data-i18n="churn.s7T">Feedback</h3><p data-i18n="churn.s7D">The outcome feeds the next training run, so the model adapts to your institution over time.</p></div><b>↘</b></li>
+        </ol>
+      </section>
+
+      <section class="solutions section-pad">
+        <div class="section-kicker">
+          <span>05</span>
+          <p data-i18n="churn.k05">The model</p>
+        </div>
+        <div class="solutions-head">
+          <h2 class="display reveal" data-i18n="churn.modelH2">Chosen on your data,<br /><em>not on ours.</em></h2>
+          <p data-i18n="churn.modelP">Several candidate models are trained and measured on your data, and the one that performs best is selected.</p>
+        </div>
+        <div class="solution-flow">
+          <div><span>01</span><h4 data-i18n="churn.m1T">Selection by PR-AUC</h4><p data-i18n="churn.m1D">On imbalanced data, the real question is “who do I call first?”. PR-AUC answers it; ROC-AUC alone misleads.</p></div>
+          <div><span>02</span><h4 data-i18n="churn.m2T">Calibration</h4><p data-i18n="churn.m2D">Raw scores are calibrated, so that “40%” really means 40%.</p></div>
+          <div><span>03</span><h4 data-i18n="churn.m3T">Cost-based threshold</h4><p data-i18n="churn.m3D">A false alarm and a missed dropout don’t cost the same. The threshold is set from that cost ratio and cut to your team’s capacity.</p></div>
+          <div><span>04</span><h4 data-i18n="churn.m4T">Explainability</h4><p data-i18n="churn.m4D">SHAP gives the top three reasons per student, by column name: “message reply time +0.18”.</p></div>
+        </div>
+      </section>
+
+      <section class="services section-pad">
+        <div class="section-kicker light">
+          <span>06</span>
+          <p data-i18n="churn.k06">Reliability</p>
+        </div>
+        <div class="services-head">
+          <h2 class="display reveal" data-i18n="churn.prH2">Principles we<br /><em>don’t bend.</em></h2>
+          <p data-i18n="churn.prP">The rules that keep a backtest honest and a daily list usable.</p>
+        </div>
+        <div class="service-grid principles">
+          <article><span>01</span><h3 data-i18n="churn.pr1T">No information<br />leakage</h3><p data-i18n="churn.pr1D">At prediction time the model can’t see any data that didn’t exist yet. Without this, backtests look misleadingly good.</p></article>
+          <article><span>02</span><h3 data-i18n="churn.pr2T">A probability,<br />not a label</h3><p data-i18n="churn.pr2D">The system never just says “at risk”. It gives a calibrated percentage; your institution decides where to intervene.</p></article>
+          <article><span>03</span><h3 data-i18n="churn.pr3T">Sized to your<br />capacity</h3><p data-i18n="churn.pr3D">If your team can hold twenty conversations a day, you get the twenty riskiest students. A list nobody can act on is no list at all.</p></article>
+          <article><span>04</span><h3 data-i18n="churn.pr4T">Missing data<br />is reported</h3><p data-i18n="churn.pr4D">Missing data isn’t filled in. The record is set aside and flagged; if too much is missing, no list is produced that day.</p></article>
+          <article><span>05</span><h3 data-i18n="churn.pr5T">Owned by your<br />institution</h3><p data-i18n="churn.pr5D">The model weights are handed over to you. The system keeps running even if our relationship ends.</p></article>
+          <article class="service-cta">
+            <p data-i18n="churn.prCtaP">Want to see it on your own data?</p>
+            <a href="become-a-client.html#apply"><span data-i18n="churn.ctaBacktest">Request a free backtest</span> <b>↗</b></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="solutions section-pad">
+        <div class="section-kicker">
+          <span>07</span>
+          <p data-i18n="churn.k07">Delivery</p>
+        </div>
+        <div class="solutions-head">
+          <h2 class="display reveal" data-i18n="churn.delH2">On their desk<br /><em>by 09:00.</em></h2>
+          <p data-i18n="churn.delP">Your team doesn’t need to log in. The list arrives every morning on the channels you choose: all three, one, or none.</p>
+        </div>
+        <div class="solution-flow cols-3">
+          <div><span>01</span><h4 data-i18n="churn.ch1T">E-mail</h4><p data-i18n="churn.ch1D">The daily risk list with per-student reasons, to several recipients. Your own SMTP server can be used.</p></div>
+          <div><span>02</span><h4>Telegram</h4><p data-i18n="churn.ch2D">Instant notification to your team’s group or to one person. Your institution’s own bot, your own group.</p></div>
+          <div><span>03</span><h4>Webhook</h4><p data-i18n="churn.ch3D">Slack, Discord or your institution’s internal system: any endpoint that accepts a message.</p></div>
+        </div>
+        <div class="solution-flow cols-3 flow-follow">
+          <div><h4 data-i18n="churn.op1T">Your institution’s clock</h4><p data-i18n="churn.op1D">Run time and time zone are configurable; the default is 09:00, Europe/Istanbul. Even on a UTC server, the mentor gets it at nine.</p></div>
+          <div><h4 data-i18n="churn.op2T">Weekdays only, if you like</h4><p data-i18n="churn.op2D">It can run on weekdays only, so a quiet Monday morning doesn’t look like an outage.</p></div>
+          <div><h4 data-i18n="churn.op3T">We tell you if it goes quiet</h4><p data-i18n="churn.op3D">If no successful run happens within a set window, a separate operator channel is alerted. A silent system and a healthy one look the same from outside; this check tells them apart.</p></div>
+        </div>
+        <p class="service-also dark" data-i18n="churn.roadmap">WhatsApp is on the roadmap: it requires the Business API, sender verification and approved message templates.</p>
+      </section>
+
+      <section class="case section-pad">
+        <div class="section-kicker">
+          <span>08</span>
+          <p data-i18n="churn.k08">Dashboard & API</p>
+        </div>
+        <div class="case-title">
+          <h2 class="display reveal" data-i18n="churn.apiH2">Use our dashboard,<br /><em>or don’t.</em></h2>
+        </div>
+        <div class="case-layout">
+          <div class="case-copy">
+            <p data-i18n="churn.apiP">Every number on the dashboard comes from the system’s own API, and the same endpoints are open to you. They are protected with an API key and ship with an OpenAPI schema, so you can connect your CRM, student tracking system or reporting tool. We provide the dashboard; using it is up to you.</p>
+          </div>
+          <div class="architecture endpoints">
+            <div class="arch-head"><span>REST API</span><span data-i18n="churn.apiTag">API KEY · OPENAPI</span></div>
+            <dl>
+              <dt>/students</dt><dd data-i18n="churn.ep1">Students above the threshold, with reasons</dd>
+              <dt>/predict/{student_id}</dt><dd data-i18n="churn.ep2">A single student’s live score</dd>
+              <dt>/predict</dt><dd data-i18n="churn.ep3">An instant prediction on the data you send</dd>
+              <dt>/metrics</dt><dd data-i18n="churn.ep4">The model’s performance metrics</dd>
+              <dt>/health</dt><dd data-i18n="churn.ep5">Whether the system is up</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="solutions section-pad">
+        <div class="section-kicker">
+          <span>09</span>
+          <p data-i18n="churn.k09">Outreach drafts</p>
+        </div>
+        <div class="solutions-head">
+          <h2 class="display reveal" data-i18n="churn.lmH2">The list says who to call.<br /><em>The draft, how to start.</em></h2>
+          <p data-i18n="churn.lmP">There is no send button on the dashboard. The responsible team reads, approves or edits the draft; the decision to send is always human.</p>
+        </div>
+        <div class="solution-flow cols-3">
+          <div><span>01</span><h4 data-i18n="churn.lm1T">Open-weight model</h4><p data-i18n="churn.lm1D">Built on an open-weight model, not a closed service. It runs in your environment; no student data goes to a third party.</p></div>
+          <div><span>02</span><h4 data-i18n="churn.lm2T">Adapted to you</h4><p data-i18n="churn.lm2D">It works with your approved communication templates and your terminology, so the output speaks in your institution’s voice.</p></div>
+          <div><span>03</span><h4 data-i18n="churn.lm3T">It selects, it doesn’t write</h4><p data-i18n="churn.lm3D">The three SHAP reasons are matched against your approved template library. The model picks which template fits whom and prepares the draft.</p></div>
+        </div>
+      </section>
+
+      <section class="faq section-pad">
+        <div class="section-kicker light">
+          <span>10</span>
+          <p data-i18n="churn.k10">Data & security</p>
+        </div>
+        <div class="services-head">
+          <h2 class="display reveal" data-i18n="churn.dataH2">You decide how<br /><em>data is shared.</em></h2>
+          <p data-i18n="churn.dataP">We don’t ask for identity data; an anonymous student code is enough, and the key that links it to a student stays with you.</p>
+        </div>
+        <div class="service-grid">
+          <article><span>01</span><h3 data-i18n="churn.d1T">De-identified<br />sharing</h3><p data-i18n="churn.d1D">Data is sent encrypted, without name, surname, e-mail or national ID number. Only behavioural data and the student code are shared.</p></article>
+          <article><span>02</span><h3 data-i18n="churn.d2T">Synthetic<br />data</h3><p data-i18n="churn.d2D">You share no real records. Column names and summary statistics (mean, minimum, maximum) are enough; we generate the dataset.</p></article>
+          <article><span>03</span><h3 data-i18n="churn.d3T">Data never<br />leaves</h3><p data-i18n="churn.d3D">The system is installed on your server or cloud account; training and prediction run in your environment.</p></article>
+        </div>
+        <ul class="security-list">
+          <li data-i18n="churn.sec1">No column outside the mapping file ever reaches the model. You decide what you send.</li>
+          <li data-i18n="churn.sec2">On request, raw data and everything derived from it is deleted after the backtest, with written confirmation.</li>
+          <li data-i18n="churn.sec3">Once installed, data and model run in your environment; there is no outbound data flow.</li>
+        </ul>
+      </section>
+
+      <section class="case section-pad" id="backtest">
+        <div class="section-kicker">
+          <span>11</span>
+          <p data-i18n="churn.k11">Free backtest</p>
+        </div>
+        <div class="case-title">
+          <p class="tag" data-i18n="churn.offerTag">NO FEE · NO SETUP · NO COMMITMENT</p>
+          <h2 class="display reveal" data-i18n="churn.offerH2">See it work on<br /><em>your own data.</em></h2>
+        </div>
+        <div class="claims">
+          <h3 data-i18n="churn.askH3">What we ask for</h3>
+          <ul>
+            <li data-i18n="churn.ask1">Two CSVs: past student records and dropout dates</li>
+            <li data-i18n="churn.ask2">Anonymized: no names, phone numbers or ID numbers</li>
+            <li data-i18n="churn.ask3">One time only; no system installation</li>
+            <li data-i18n="churn.ask4">A short form: fees, cost of outreach and team capacity</li>
+          </ul>
+        </div>
+        <div class="claims">
+          <h3 data-i18n="churn.getH3">What you get, within 2 weeks</h3>
+          <ul>
+            <li data-i18n="churn.get1">How many dropouts we would have caught last term, and how many days early</li>
+            <li data-i18n="churn.get2">How long the daily list would be at your capacity</li>
+            <li data-i18n="churn.get3">A data-quality report: which columns are missing, how many rows are unusable</li>
+            <li data-i18n="churn.get4">If the result is weak, we’ll write that just as clearly</li>
+          </ul>
+        </div>
+        <div class="solution-flow flow-follow next-steps">
+          <div><span data-i18n="churn.n1T">TODAY</span><p data-i18n="churn.n1D">Decide who will export the data, and from which system.</p></div>
+          <div><span data-i18n="churn.n2T">WITHIN A WEEK</span><p data-i18n="churn.n2D">Two anonymized CSVs reach us.</p></div>
+          <div><span data-i18n="churn.n3T">+2 WEEKS</span><p data-i18n="churn.n3D">The backtest report is in your hands.</p></div>
+          <div><span data-i18n="churn.n4T">THEN</span><p data-i18n="churn.n4D">We look at the numbers together and start the installation.</p></div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow centered">
+          <span></span> <span>EO-Churn</span> <span></span>
+        </p>
+        <h2 class="reveal" data-i18n="churn.contactH2">All we need is<br /><em>two CSV files.</em></h2>
+        <a class="contact-button" href="become-a-client.html#apply"
+          ><span data-i18n="churn.ctaBacktest">Request a free backtest</span> <b>↗</b></a
+        >
+        <div class="contact-foot">
+          <a class="brand" href="index.html#top"><img src="logos/eoai-wordmark-white.svg" alt="EOAI Lab" width="1576" height="380" /></a
+          ><span data-i18n="churn.footTag">Student dropout early warning</span><span>© 2026 EOAI Lab</span>
+        </div>
+      </section>
+    </main>
+    <a class="to-top" href="#top" data-i18n-aria-label="home.toTopAria" aria-label="Back to top"><b>↑</b></a>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
