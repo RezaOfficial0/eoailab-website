@@ -17,6 +17,7 @@
       "nav.workWithUs": "Work with us",
       "nav.brandAria": "EOAI Lab home",
       "nav.menuAria": "Open navigation",
+      "nav.menuCloseAria": "Close navigation",
 
       "home.metaTitle": "EOAI Lab",
       "home.navCta": "Start a conversation",
@@ -434,6 +435,7 @@
       "nav.workWithUs": "Bizimle çalışın",
       "nav.brandAria": "EOAI Lab ana sayfa",
       "nav.menuAria": "Menüyü aç",
+      "nav.menuCloseAria": "Menüyü kapat",
 
       "home.metaTitle": "EOAI Lab",
       "home.navCta": "Bir görüşme başlatın",
