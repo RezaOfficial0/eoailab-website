@@ -11,6 +11,7 @@
     en: {
       "nav.capabilities": "Capabilities",
       "nav.solutions": "Solutions",
+      "nav.eoChurn": "EO-Churn",
       "nav.caseStudy": "How it works",
       "nav.about": "About",
       "nav.workWithUs": "Work with us",
@@ -29,6 +30,7 @@
       "home.artTop": "YOUR KNOWLEDGE",
       "home.artRight": "YOUR MODEL",
       "home.artBottom": "YOUR INTELLIGENCE",
+      "home.coreLabel": "YOUR AI",
       "home.scrollHint": "Scroll to enter",
 
       "home.kicker01": "A new category",
@@ -126,31 +128,12 @@
         "The mentor reaches out and logs the outcome. That outcome feeds the next training run, so the model adapts to your institution.",
       "home.eocFact1": "Daily risk list,<br>no login needed",
       "home.eocFact2": "Reasons per student,<br>by column name (SHAP)",
-      "home.eocFact3": "Identity fields needed,<br>an anonymous code is enough",
-      "home.eocFact4": "Messages sent without<br>human approval",
-      "home.eocFootP":
-        "DEMO SCREENS USE SYNTHETIC DATA. THEY SHOW THE PIPELINE WORKS END TO END, NOT THE PRODUCT’S ACCURACY",
+      "home.eocFact3": "Delivery channels:<br>e-mail, Telegram, webhook",
+      "home.eocFact4": "To a free backtest report<br>on your own data",
+      "home.eocFact4Unit": " weeks",
       "home.eocFootLink": "Request a free backtest",
+      "home.eocPageLink": "Explore EO-Churn",
 
-      "home.solTag": "SOLUTION 02 · TELECOM · REFERENCE BUILD",
-      "home.solH3": "AI-Assisted Customer<br>Churn Warning",
-      "home.solCopy":
-        "A private early-warning system that scores every customer’s likelihood of leaving every morning, automatically, and explains why, in terms your team can act on. We built it on a well-known public telecom churn dataset to prove the pipeline end to end: it shows the system works, not how accurate it would be on your customers.",
-      "home.flow1Title": "Daily batch",
-      "home.flow1Desc":
-        "Yesterday’s customer data ingested every morning, preprocessed identically to training: same scaler, same features.",
-      "home.flow2Title": "Neural network",
-      "home.flow2Desc":
-        "A churn probability computed for every customer, flagged the moment it crosses a tuned risk threshold.",
-      "home.flow3Title": "SHAP explanation",
-      "home.flow3Desc":
-        "Not just who, but why. Every flag ships with its top drivers, ranked and readable.",
-      "home.flow4Title": "Delivery",
-      "home.flow4Desc":
-        "A Dockerized REST API plus a daily risk alert, delivered where your team already works.",
-      "home.solFootP":
-        "TRAINING PIPELINE · DAILY BATCH · REST API · SHAP · DOCKER · ALL ON INFRASTRUCTURE YOU OWN",
-      "home.solFootLink": "Ask about this solution",
       "home.solMoreP": "More solutions are in active development.",
       "home.solMoreLink": "Tell us what you’d<br>want us to build",
 
@@ -175,28 +158,8 @@
       "home.claim3":
         "The real number comes from your data. Send two anonymized CSVs and within two weeks you’ll see how many dropouts we would have caught last term, and how many days early. If the result is weak, we’ll say so just as clearly.",
 
-      "home.kicker06": "The difference",
-      "home.comparisonH2":
-        "A vendor can<br>rent you AI.<br><em>Or make it yours.</em>",
-      "home.thWhat": "What changes",
-      "home.thTraditional": "Rented AI service",
-      "home.row1c1": "Core intelligence",
-      "home.row1c2": "Rents third-party APIs",
-      "home.row1c3": "Built for your enterprise",
-      "home.row2c1": "Knowledge",
-      "home.row2c2": "Lives in prompts &amp; tools",
-      "home.row2c3": "Becomes institutional memory",
-      "home.row3c1": "Data posture",
-      "home.row3c2": "Leaves your perimeter",
-      "home.row3c3": "Governed on your terms",
-      "home.row4c1": "Strategic value",
-      "home.row4c2": "Replicable capability",
-      "home.row4c3": "Compounding asset",
-      "home.row5c1": "Control",
-      "home.row5c2": "Subject to provider roadmaps",
-      "home.row5c3": "Entirely yours",
+      "home.kicker06": "Questions, answered",
 
-      "home.kicker07": "Questions, answered",
       "home.faqH2": "The intelligent<br><em>questions.</em>",
       "home.faq1Q": "What exactly is EOAI?",
       "home.faq1A":
@@ -216,6 +179,197 @@
         "It’s time to own<br><em>what makes you different.</em>",
       "home.contactFootTag": "Enterprise-Owned Artificial Intelligence",
       "home.toTopAria": "Back to top",
+
+      "churn.metaTitle": "EOAI Lab",
+      "churn.navCta": "Request a backtest",
+      "churn.ctaBacktest": "Request a free backtest",
+      "churn.heroEyebrow": "EO-Churn · Student dropout early warning",
+      "churn.heroH1": "Catch the dropout<br><em>before it happens.</em>",
+      "churn.heroLede":
+        "Which student is about to leave, why, and what your team should do this week. Every morning, on your own data.",
+      "churn.heroCtaGhost": "See how it works",
+      "churn.shot1Alt":
+        "EO-Churn daily risk list: students ranked by dropout probability, each with its top three SHAP reasons",
+      "churn.shot2Alt":
+        "EO-Churn outreach draft: a mentor message chosen from approved templates, marked as not sent",
+      "churn.k01": "The problem",
+      "churn.probH2": "A student doesn’t leave<br><em>overnight.</em>",
+      "churn.probP1":
+        "First, replies to messages slow down. Mock-exam scores drop, a payment runs late, attendance thins out. These signals are already recorded in your systems, but nowhere are they read together.",
+      "churn.probP2":
+        "Noticing is left to a mentor’s intuition, and it usually comes too late. A student who leaves doesn’t cancel one payment; they erase the rest of the term.",
+      "churn.k02": "Every morning",
+      "churn.qH2": "Three questions,<br><em>answered daily.</em>",
+      "churn.qP":
+        "EO-Churn doesn’t send anyone a message. It ranks, gives the reason, and prepares the draft. The decision to send always stays with your team.",
+      "churn.q1T": "Who",
+      "churn.q1D":
+        "A calibrated dropout probability for every active student, ranked by risk. Not a binary “at risk / not at risk” label.",
+      "churn.q2T": "Why",
+      "churn.q2D":
+        "The top three reasons for each student, by column: “message reply time +0.18”, “mock-exam trend +0.17”.",
+      "churn.q3T": "What to do",
+      "churn.q3D":
+        "An outreach draft picked from your own approved templates, with a success measure for the conversation.",
+      "churn.k03": "The dashboard",
+      "churn.dashH2": "Everything in<br><em>one place.</em>",
+      "churn.dashP":
+        "Three views: the daily risk list, every student including those below the threshold, and model health: which threshold ran, how many rows were quarantined, when the last run happened.",
+      "churn.shot1Cap":
+        "Daily risk list: ranked by probability, with the top three reasons, plan and membership on every row.",
+      "churn.shot2Cap":
+        "Outreach draft: chosen from approved templates. There is no send button on the dashboard.",
+      "churn.k04": "How it works",
+      "churn.flowH2": "From your export<br><em>to a mentor’s call.</em>",
+      "churn.flowP":
+        "No new data collection. EO-Churn reads what your systems already record.",
+      "churn.s1T": "Export",
+      "churn.s1D":
+        "A CSV or LMS export from the system you already use is enough.",
+      "churn.s2T": "Column mapping",
+      "churn.s2D":
+        "Your headers are mapped to the system’s schema once, with a single mapping file.",
+      "churn.s3T": "Training",
+      "churn.s3D":
+        "The model learns from your own student history, not another institution’s. Unusable rows are set aside and reported to you.",
+      "churn.s4T": "Daily scoring",
+      "churn.s4D":
+        "Every active student is re-scored automatically each morning.",
+      "churn.s5T": "Dashboard and e-mail",
+      "churn.s5D":
+        "The ranked list, the reasons and the drafts land in front of your team.",
+      "churn.s6T": "Mentor action",
+      "churn.s6D":
+        "The mentor reaches out and logs the outcome on the dashboard.",
+      "churn.s7T": "Feedback",
+      "churn.s7D":
+        "The outcome feeds the next training run, so the model adapts to your institution over time.",
+      "churn.k05": "The model",
+      "churn.modelH2": "Chosen on your data,<br><em>not on ours.</em>",
+      "churn.modelP":
+        "Several candidate models are trained and measured on your data, and the one that performs best is selected.",
+      "churn.m1T": "Selection by PR-AUC",
+      "churn.m1D":
+        "On imbalanced data, the real question is “who do I call first?”. PR-AUC answers it; ROC-AUC alone misleads.",
+      "churn.m2T": "Calibration",
+      "churn.m2D": "Raw scores are calibrated, so that “40%” really means 40%.",
+      "churn.m3T": "Cost-based threshold",
+      "churn.m3D":
+        "A false alarm and a missed dropout don’t cost the same. The threshold is set from that cost ratio and cut to your team’s capacity.",
+      "churn.m4T": "Explainability",
+      "churn.m4D":
+        "SHAP gives the top three reasons per student, by column name: “message reply time +0.18”.",
+      "churn.k06": "Reliability",
+      "churn.prH2": "Principles we<br><em>don’t bend.</em>",
+      "churn.prP":
+        "The rules that keep a backtest honest and a daily list usable.",
+      "churn.pr1T": "No information<br>leakage",
+      "churn.pr1D":
+        "At prediction time the model can’t see any data that didn’t exist yet. Without this, backtests look misleadingly good.",
+      "churn.pr2T": "A probability,<br>not a label",
+      "churn.pr2D":
+        "The system never just says “at risk”. It gives a calibrated percentage; your institution decides where to intervene.",
+      "churn.pr3T": "Sized to your<br>capacity",
+      "churn.pr3D":
+        "If your team can hold twenty conversations a day, you get the twenty riskiest students. A list nobody can act on is no list at all.",
+      "churn.pr4T": "Missing data<br>is reported",
+      "churn.pr4D":
+        "Missing data isn’t filled in. The record is set aside and flagged; if too much is missing, no list is produced that day.",
+      "churn.pr5T": "Owned by your<br>institution",
+      "churn.pr5D":
+        "The model weights are handed over to you. The system keeps running even if our relationship ends.",
+      "churn.prCtaP": "Want to see it on your own data?",
+      "churn.k07": "Delivery",
+      "churn.delH2": "On their desk<br><em>by 09:00.</em>",
+      "churn.delP":
+        "Your team doesn’t need to log in. The list arrives every morning on the channels you choose: all three, one, or none.",
+      "churn.ch1T": "E-mail",
+      "churn.ch1D":
+        "The daily risk list with per-student reasons, to several recipients. Your own SMTP server can be used.",
+      "churn.ch2D":
+        "Instant notification to your team’s group or to one person. Your institution’s own bot, your own group.",
+      "churn.ch3D":
+        "Slack, Discord or your institution’s internal system: any endpoint that accepts a message.",
+      "churn.op1T": "Your institution’s clock",
+      "churn.op1D":
+        "Run time and time zone are configurable; the default is 09:00, Europe/Istanbul. Even on a UTC server, the mentor gets it at nine.",
+      "churn.op2T": "Weekdays only, if you like",
+      "churn.op2D":
+        "It can run on weekdays only, so a quiet Monday morning doesn’t look like an outage.",
+      "churn.op3T": "We tell you if it goes quiet",
+      "churn.op3D":
+        "If no successful run happens within a set window, a separate operator channel is alerted. A silent system and a healthy one look the same from outside; this check tells them apart.",
+      "churn.roadmap":
+        "WhatsApp is on the roadmap: it requires the Business API, sender verification and approved message templates.",
+      "churn.k08": "Dashboard & API",
+      "churn.apiH2": "Use our dashboard,<br><em>or don’t.</em>",
+      "churn.apiP":
+        "Every number on the dashboard comes from the system’s own API, and the same endpoints are open to you. They are protected with an API key and ship with an OpenAPI schema, so you can connect your CRM, student tracking system or reporting tool. We provide the dashboard; using it is up to you.",
+      "churn.apiTag": "API KEY · OPENAPI",
+      "churn.ep1": "Students above the threshold, with reasons",
+      "churn.ep2": "A single student’s live score",
+      "churn.ep3": "An instant prediction on the data you send",
+      "churn.ep4": "The model’s performance metrics",
+      "churn.ep5": "Whether the system is up",
+      "churn.k09": "Outreach drafts",
+      "churn.lmH2":
+        "The list says who to call.<br><em>The draft, how to start.</em>",
+      "churn.lmP":
+        "There is no send button on the dashboard. The responsible team reads, approves or edits the draft; the decision to send is always human.",
+      "churn.lm1T": "Open-weight model",
+      "churn.lm1D":
+        "Built on an open-weight model, not a closed service. It runs in your environment; no student data goes to a third party.",
+      "churn.lm2T": "Adapted to you",
+      "churn.lm2D":
+        "It works with your approved communication templates and your terminology, so the output speaks in your institution’s voice.",
+      "churn.lm3T": "It selects, it doesn’t write",
+      "churn.lm3D":
+        "The three SHAP reasons are matched against your approved template library. The model picks which template fits whom and prepares the draft.",
+      "churn.k10": "Data & security",
+      "churn.dataH2": "You decide how<br><em>data is shared.</em>",
+      "churn.dataP":
+        "We don’t ask for identity data; an anonymous student code is enough, and the key that links it to a student stays with you.",
+      "churn.d1T": "De-identified<br>sharing",
+      "churn.d1D":
+        "Data is sent encrypted, without name, surname, e-mail or national ID number. Only behavioural data and the student code are shared.",
+      "churn.d2T": "Synthetic<br>data",
+      "churn.d2D":
+        "You share no real records. Column names and summary statistics (mean, minimum, maximum) are enough; we generate the dataset.",
+      "churn.d3T": "Data never<br>leaves",
+      "churn.d3D":
+        "The system is installed on your server or cloud account; training and prediction run in your environment.",
+      "churn.sec1":
+        "No column outside the mapping file ever reaches the model. You decide what you send.",
+      "churn.sec2":
+        "On request, raw data and everything derived from it is deleted after the backtest, with written confirmation.",
+      "churn.sec3":
+        "Once installed, data and model run in your environment; there is no outbound data flow.",
+      "churn.k11": "Free backtest",
+      "churn.offerTag": "NO FEE · NO SETUP · NO COMMITMENT",
+      "churn.offerH2": "See it work on<br><em>your own data.</em>",
+      "churn.askH3": "What we ask for",
+      "churn.ask1": "Two CSVs: past student records and dropout dates",
+      "churn.ask2": "Anonymized: no names, phone numbers or ID numbers",
+      "churn.ask3": "One time only; no system installation",
+      "churn.ask4": "A short form: fees, cost of outreach and team capacity",
+      "churn.getH3": "What you get, within 2 weeks",
+      "churn.get1":
+        "How many dropouts we would have caught last term, and how many days early",
+      "churn.get2": "How long the daily list would be at your capacity",
+      "churn.get3":
+        "A data-quality report: which columns are missing, how many rows are unusable",
+      "churn.get4": "If the result is weak, we’ll write that just as clearly",
+      "churn.n1T": "TODAY",
+      "churn.n1D": "Decide who will export the data, and from which system.",
+      "churn.n2T": "WITHIN A WEEK",
+      "churn.n2D": "Two anonymized CSVs reach us.",
+      "churn.n3T": "+2 WEEKS",
+      "churn.n3D": "The backtest report is in your hands.",
+      "churn.n4T": "THEN",
+      "churn.n4D":
+        "We look at the numbers together and start the installation.",
+      "churn.contactH2": "All we need is<br><em>two CSV files.</em>",
+      "churn.footTag": "Student dropout early warning",
 
       "work.metaTitle": "EOAI Lab",
       "work.navCta": "Apply now",
@@ -274,6 +428,7 @@
     tr: {
       "nav.capabilities": "Yetenekler",
       "nav.solutions": "Çözümler",
+      "nav.eoChurn": "EO-Churn",
       "nav.caseStudy": "Nasıl çalışır",
       "nav.about": "Hakkımızda",
       "nav.workWithUs": "Bizimle çalışın",
@@ -292,6 +447,7 @@
       "home.artTop": "BİLGİNİZ",
       "home.artRight": "MODELİNİZ",
       "home.artBottom": "ZEKÂNIZ",
+      "home.coreLabel": "YAPAY<br>ZEKÂNIZ",
       "home.scrollHint": "Girmek için kaydırın",
 
       "home.kicker01": "Yeni bir kategori",
@@ -389,31 +545,12 @@
         "Mentor temas kurar, sonucu panele işler. Bu sonuç bir sonraki eğitime girer; model zamanla kurumunuza uyum sağlar.",
       "home.eocFact1": "Günlük risk listesi,<br>panele girmeye gerek yok",
       "home.eocFact2": "Öğrenci başına sebep,<br>kolon adıyla (SHAP)",
-      "home.eocFact3": "Kimlik bilgisi gerekmez,<br>anonim bir kod yeterli",
-      "home.eocFact4": "İnsan onayı olmadan<br>gönderilen mesaj",
-      "home.eocFootP":
-        "DEMO EKRANLARI SENTETİK VERİ KULLANIR. BORU HATTININ UÇTAN UCA ÇALIŞTIĞINI GÖSTERİR, ÜRÜNÜN DOĞRULUĞUNU DEĞİL",
+      "home.eocFact3": "Teslim kanalı:<br>e-posta, Telegram, webhook",
+      "home.eocFact4": "İçinde ücretsiz backtest raporu,<br>kendi verinizle",
+      "home.eocFact4Unit": " hafta",
       "home.eocFootLink": "Ücretsiz backtest isteyin",
+      "home.eocPageLink": "EO-Churn’ü inceleyin",
 
-      "home.solTag": "ÇÖZÜM 02 · TELEKOM · REFERANS ÇALIŞMA",
-      "home.solH3": "Yapay Zekâ Destekli<br>Müşteri Kaybı Uyarısı",
-      "home.solCopy":
-        "Her sabah otomatik olarak her müşterinin ayrılma olasılığını puanlayan ve nedenini ekibinizin harekete geçebileceği şekilde açıklayan özel bir erken uyarı sistemi. Boru hattını uçtan uca kanıtlamak için herkesçe bilinen, halka açık bir telekom churn veri setiyle kurduk: sistemin çalıştığını gösterir, sizin müşterilerinizde ne kadar doğru olacağını değil.",
-      "home.flow1Title": "Günlük toplu işlem",
-      "home.flow1Desc":
-        "Dünün müşteri verileri her sabah alınır ve eğitimle birebir aynı şekilde işlenir: aynı ölçekleyici, aynı öznitelikler.",
-      "home.flow2Title": "Sinir ağı",
-      "home.flow2Desc":
-        "Her müşteri için bir kayıp olasılığı hesaplanır ve ayarlanmış risk eşiğini geçtiği anda işaretlenir.",
-      "home.flow3Title": "SHAP açıklaması",
-      "home.flow3Desc":
-        "Sadece kim değil, neden. Her işaretleme, sıralanmış ve okunabilir en önemli etkenlerle birlikte gelir.",
-      "home.flow4Title": "Teslimat",
-      "home.flow4Desc":
-        "Dockerize edilmiş bir REST API ve ekibinizin zaten çalıştığı yere gönderilen günlük bir risk uyarısı.",
-      "home.solFootP":
-        "EĞİTİM HATTI · GÜNLÜK TOPLU İŞLEM · REST API · SHAP · DOCKER · TAMAMI SİZİN ALTYAPINIZDA",
-      "home.solFootLink": "Bu çözüm hakkında bilgi alın",
       "home.solMoreP": "Daha fazla çözüm aktif olarak geliştiriliyor.",
       "home.solMoreLink": "Ne inşa etmemizi<br>istediğinizi anlatın",
 
@@ -438,28 +575,8 @@
       "home.claim3":
         "Gerçek sayı sizin verinizden çıkar. Anonimleştirilmiş iki CSV gönderin; iki hafta içinde geçen dönem kaç ayrılmayı, kaç gün önceden yakalardık görün. Sonuç zayıf çıkarsa bunu da aynı netlikte yazarız.",
 
-      "home.kicker06": "Fark",
-      "home.comparisonH2":
-        "Bir sağlayıcı size<br>yapay zekâ kiralar.<br><em>Ya da sizin olur.</em>",
-      "home.thWhat": "Ne değişir",
-      "home.thTraditional": "Kiralık yapay zekâ servisi",
-      "home.row1c1": "Temel zekâ",
-      "home.row1c2": "Üçüncü taraf API’ler kiralar",
-      "home.row1c3": "Kurumunuz için inşa edilir",
-      "home.row2c1": "Bilgi",
-      "home.row2c2": "Prompt ve araçlarda yaşar",
-      "home.row2c3": "Kurumsal hafızaya dönüşür",
-      "home.row3c1": "Veri duruşu",
-      "home.row3c2": "Sınırlarınızın dışına çıkar",
-      "home.row3c3": "Kendi şartlarınızla yönetilir",
-      "home.row4c1": "Stratejik değer",
-      "home.row4c2": "Taklit edilebilir yetenek",
-      "home.row4c3": "Katlanarak büyüyen varlık",
-      "home.row5c1": "Kontrol",
-      "home.row5c2": "Sağlayıcının yol haritasına bağlı",
-      "home.row5c3": "Tamamen size ait",
+      "home.kicker06": "Sorular, yanıtlandı",
 
-      "home.kicker07": "Sorular, yanıtlandı",
       "home.faqH2": "Akıllı<br><em>sorular.</em>",
       "home.faq1Q": "EOAI tam olarak nedir?",
       "home.faq1A":
@@ -479,6 +596,197 @@
         "Sizi farklı kılan şey<br><em>sizin olsun.</em>",
       "home.contactFootTag": "Kurumsal Sahipli Yapay Zekâ",
       "home.toTopAria": "Başa dön",
+
+      "churn.metaTitle": "EOAI Lab",
+      "churn.navCta": "Backtest isteyin",
+      "churn.ctaBacktest": "Ücretsiz backtest isteyin",
+      "churn.heroEyebrow": "EO-Churn · Öğrenci kaybı erken uyarı sistemi",
+      "churn.heroH1": "Ayrılığı<br><em>gerçekleşmeden yakalayın.</em>",
+      "churn.heroLede":
+        "Hangi öğrenci ayrılmak üzere, neden ve bu hafta ne yapılmalı. Her sabah, kendi verinizle.",
+      "churn.heroCtaGhost": "Nasıl çalıştığını görün",
+      "churn.shot1Alt":
+        "EO-Churn günlük risk listesi: ayrılma olasılığına göre sıralı öğrenciler ve her biri için öne çıkan üç SHAP sebebi",
+      "churn.shot2Alt":
+        "EO-Churn temas taslağı: onaylı şablonlardan seçilmiş, gönderilmemiş bir mentor mesajı",
+      "churn.k01": "Problem",
+      "churn.probH2": "Bir öğrenci bir sabah<br><em>aniden ayrılmaz.</em>",
+      "churn.probP1":
+        "Önce mesajlara geç döner, deneme netleri düşer, ödeme gecikir, derse devamı azalır. Bu sinyaller kurumun sisteminde zaten kayıtlıdır, ancak hiçbir yerde birlikte okunmaz.",
+      "churn.probP2":
+        "Fark etmek mentorun sezgisine kalır ve çoğunlukla geç olur. Ayrılan bir öğrenci tek bir ödemeyi değil, kalan dönemin tamamını siler.",
+      "churn.k02": "Her sabah",
+      "churn.qH2": "Her sabah<br><em>üç soru.</em>",
+      "churn.qP":
+        "Sistem kimseye mesaj göndermez. Sıraya koyar, sebebini söyler, taslağı hazırlar. Gönderme kararı her zaman ilgilinindir.",
+      "churn.q1T": "Kim",
+      "churn.q1D":
+        "Aktif her öğrenci için kalibre edilmiş ayrılma olasılığı. Liste riske göre sıralı gelir; ikili bir “riskli / değil” etiketi değil.",
+      "churn.q2T": "Neden",
+      "churn.q2D":
+        "Her öğrenci için öne çıkan üç sebep, kolon bazında: “mesaj yanıt süresi +0.18”, “deneme sınavı trendi +0.17”.",
+      "churn.q3T": "Ne yapılmalı",
+      "churn.q3D":
+        "Kurumun kendi onaylı şablonlarından seçilmiş bir temas taslağı ve bir başarı ölçütü.",
+      "churn.k03": "Panel",
+      "churn.dashH2": "Her şey<br><em>tek bir ekranda.</em>",
+      "churn.dashP":
+        "Üç bölüm: günlük risk listesi, eşiğin altındakiler dahil tüm öğrenciler ve model sağlığı: hangi eşik kullanıldı, kaç satır karantinaya alındı, son koşu ne zaman yapıldı.",
+      "churn.shot1Cap":
+        "Günlük risk listesi: olasılığa göre sıralı; her satırda öne çıkan üç sebep, plan ve üyelik süresi.",
+      "churn.shot2Cap":
+        "Temas taslağı: onaylı şablonlardan seçilir. Panelde gönderme düğmesi yoktur.",
+      "churn.k04": "İş akışı",
+      "churn.flowH2": "Dışa aktarımdan<br><em>mentorun aramasına.</em>",
+      "churn.flowP":
+        "Yeni veri toplamıyoruz. EO-Churn, sisteminizin zaten kaydettiklerini okur.",
+      "churn.s1T": "Dışa aktarım",
+      "churn.s1D":
+        "Mevcut sisteminizden bir CSV veya LMS dışa aktarımı yeterlidir.",
+      "churn.s2T": "Kolon eşleme",
+      "churn.s2D":
+        "Başlıklarınız tek bir eşleme dosyasıyla sistemin şemasına bir kez eşlenir.",
+      "churn.s3T": "Eğitim",
+      "churn.s3D":
+        "Model başka bir kurumun verisiyle değil, sizin öğrenci geçmişinizle eğitilir. Kullanılamayan satırlar ayrılır ve size raporlanır.",
+      "churn.s4T": "Günlük skorlama",
+      "churn.s4D":
+        "Aktif öğrencilerin tamamı her sabah otomatik olarak yeniden puanlanır.",
+      "churn.s5T": "Panel ve e-posta",
+      "churn.s5D": "Sıralı liste, sebepler ve taslaklar ekibin önüne düşer.",
+      "churn.s6T": "Mentor aksiyonu",
+      "churn.s6D": "Mentor temas kurar, sonucu panele işler.",
+      "churn.s7T": "Geri besleme",
+      "churn.s7D":
+        "Sonuç bir sonraki eğitime girer; model zamanla kurumunuza uyum sağlar.",
+      "churn.k05": "Model",
+      "churn.modelH2": "Sizin verinizde seçilir,<br><em>bizimkinde değil.</em>",
+      "churn.modelP":
+        "Birden fazla model verileriniz üzerinde eğitilir ve performansları ölçülür; ardından en iyi performansı gösteren seçilir.",
+      "churn.m1T": "PR-AUC ile seçim",
+      "churn.m1D":
+        "Dengesiz bir veride asıl soru “kimi önce arayacağım?”dır. Cevabı PR-AUC verir; ROC-AUC tek başına yanıltır.",
+      "churn.m2T": "Kalibrasyon",
+      "churn.m2D":
+        "Ham olasılıklar kalibre edilir; “%40” gerçekten %40 demek olsun diye.",
+      "churn.m3T": "Maliyete dayalı eşik",
+      "churn.m3D":
+        "Yanlış alarm ile kaçan ayrılmanın maliyeti eşit değil. Eşik bu maliyet oranıyla hesaplanır ve ekip kapasitesine göre kesilir.",
+      "churn.m4T": "Açıklanabilirlik",
+      "churn.m4D":
+        "SHAP ile öğrenci bazında ilk üç sebep. Model neyi gördüğünü kolon adıyla söyler: “mesaj yanıt süresi +0.18”.",
+      "churn.k06": "Güvenilirlik",
+      "churn.prH2": "Esnetmediğimiz<br><em>ilkeler.</em>",
+      "churn.prP":
+        "Bir backtest’i dürüst, günlük listeyi kullanılabilir tutan kurallar.",
+      "churn.pr1T": "Bilgi sızıntısı<br>yok",
+      "churn.pr1D":
+        "Model, tahmin anında henüz oluşmamış hiçbir veriye erişemez. Bu önlem alınmadığında geçmişe dönük testler yanıltıcı derecede iyi sonuç verir.",
+      "churn.pr2T": "Etiket değil,<br>olasılık",
+      "churn.pr2D":
+        "Sistem “riskli” demez; kalibre edilmiş bir yüzde verir. Müdahale eşiğine kurum karar verir.",
+      "churn.pr3T": "Kapasiteniz<br>kadar liste",
+      "churn.pr3D":
+        "Günde yirmi görüşme yapılabiliyorsa en riskli yirmi öğrenci sunulur. Uygulanamayan bir liste, olmayan listeyle eşdeğerdir.",
+      "churn.pr4T": "Eksik veri<br>raporlanır",
+      "churn.pr4D":
+        "Eksik veri tamamlanmaz. İlgili kayıt listeden ayrılır ve bildirilir; eksik oranı sınırı aşarsa o gün liste üretilmez.",
+      "churn.pr5T": "Kurumun<br>mülkiyetinde",
+      "churn.pr5D":
+        "Model ağırlıkları kuruma teslim edilir; tedarikçi ilişkisi sona erse dahi sistem çalışmaya devam eder.",
+      "churn.prCtaP": "Kendi verinizde görmek ister misiniz?",
+      "churn.k07": "Teslimat",
+      "churn.delH2": "Liste sabah<br><em>09.00’da hazır.</em>",
+      "churn.delP":
+        "Ekibin panele girmesi gerekmez. Liste her sabah, sizin seçtiğiniz kanallardan gelir: üçü birden, biri ya da hiçbiri.",
+      "churn.ch1T": "E-posta",
+      "churn.ch1D":
+        "Günlük risk listesi, öğrenci bazında sebepleriyle birlikte. Birden fazla alıcıya gider; kurumun kendi SMTP sunucusu kullanılabilir.",
+      "churn.ch2D":
+        "Ekibinizin grubuna veya tek bir kişiye anlık bildirim. Kurumun kendi botu, kendi grubu.",
+      "churn.ch3D":
+        "Slack, Discord veya kurumun kendi iç sistemi. Mesajı kabul eden her uca gönderilebilir.",
+      "churn.op1T": "Saat kurumun saati",
+      "churn.op1D":
+        "Çalışma saati ve zaman dilimi ayarlanabilir; varsayılan 09:00, Europe/Istanbul. Sunucu UTC’de çalışsa bile mentora sabah dokuzda ulaşır.",
+      "churn.op2T": "Hafta günü seçilebilir",
+      "churn.op2D":
+        "Sadece hafta içi çalıştırılabilir. Pazartesi sabahı bir arıza gibi görünmez.",
+      "churn.op3T": "Sistem susarsa haber veririz",
+      "churn.op3D":
+        "Belirlenen süre boyunca başarılı koşu olmazsa ayrı bir operatör kanalına uyarı gider. Sessiz bir sistemle sağlıklı bir sistem dışarıdan aynı görünür; bu kontrol o farkı yakalar.",
+      "churn.roadmap":
+        "WhatsApp yol haritasında: Business API, gönderici doğrulaması ve onaylı mesaj şablonları gerektiriyor.",
+      "churn.k08": "Panel ve API",
+      "churn.apiH2": "Panelimizi kullanmak<br><em>zorunda değilsiniz.</em>",
+      "churn.apiP":
+        "Paneldeki her veri sistemin kendi API’sinden geliyor ve aynı uçlar size de açık. API anahtarıyla korunuyor, OpenAPI şeması hazır; kendi CRM’inize, öğrenci takip sisteminize veya raporlama aracınıza bağlayabilirsiniz. Biz panel veriyoruz; siz isterseniz kullanırsınız.",
+      "churn.apiTag": "API ANAHTARI · OPENAPI",
+      "churn.ep1": "Eşiği aşan öğrenciler, sebepleriyle",
+      "churn.ep2": "Tek öğrencinin anlık skoru",
+      "churn.ep3": "Elinizdeki veriyle anlık tahmin",
+      "churn.ep4": "Modelin performans metrikleri",
+      "churn.ep5": "Sistem çalışır durumda mı",
+      "churn.k09": "Temas taslakları",
+      "churn.lmH2":
+        "Liste kimi arayacağınızı söyler.<br><em>Taslak, nasıl başlayacağınızı.</em>",
+      "churn.lmP":
+        "Panelde gönderme düğmesi yoktur. Taslağı sorumlu ekip okur, onaylar veya değiştirir; gönderme kararı her zaman insandadır.",
+      "churn.lm1T": "Açık ağırlıklı model",
+      "churn.lm1D":
+        "Kapalı bir servise değil, ağırlıkları açık bir modele dayanıyor. Model kurumun kendi ortamında çalışır; hiçbir öğrenci verisi dışarıya, üçüncü bir sağlayıcıya gitmez.",
+      "churn.lm2T": "Kuruma uyarlanır",
+      "churn.lm2D":
+        "Model, kurumun kendi onaylı iletişim şablonlarıyla ve kendi terminolojisiyle çalışacak şekilde uyarlanır. Çıktı sizin kurumunuzun diliyle konuşur.",
+      "churn.lm3T": "Metni model yazmaz, seçer",
+      "churn.lm3D":
+        "SHAP’in çıkardığı üç sebep, onaylı şablon kütüphanenizle eşleştirilir. Model hangi şablonun kime uyduğunu seçer ve taslağı hazırlar.",
+      "churn.k10": "Veri ve güvenlik",
+      "churn.dataH2":
+        "Veriyi nasıl paylaşacağınıza<br><em>siz karar verirsiniz.</em>",
+      "churn.dataP":
+        "Kimlik bilgisi istemiyoruz; anonim bir öğrenci kodu yeterli. Kodu öğrenciye bağlayan anahtar sizde kalır.",
+      "churn.d1T": "Arındırılmış<br>paylaşım",
+      "churn.d1D":
+        "Veri; ad, soyad, e-posta ve TC kimlik numarası olmadan, şifreli olarak iletilir. Yalnızca davranış verileri ve öğrenci numarası paylaşılır.",
+      "churn.d2T": "Sentetik<br>veri",
+      "churn.d2D":
+        "Hiçbir gerçek kayıt paylaşmazsınız. Kolon adları ve istatistiksel özetler (ortalama, minimum, maksimum) yeterlidir; veri setini biz üretiriz.",
+      "churn.d3T": "Veri kurumdan<br>hiç çıkmaz",
+      "churn.d3D":
+        "Sistem sizin sunucunuza veya bulut hesabınıza kurulur; eğitim ve tahmin sizin ortamınızda çalışır.",
+      "churn.sec1":
+        "Eşleme dosyasında tanımlı olmayan hiçbir kolon modele girmez. Ne gönderdiğinizi siz belirlersiniz.",
+      "churn.sec2":
+        "Talep ederseniz backtest sonrası ham veri ve ondan türeyen her şey silinir, yazılı olarak teyit edilir.",
+      "churn.sec3":
+        "Sistem kurulduğunda veri ve model sizin ortamınızda çalışır; dışarı veri akışı olmaz.",
+      "churn.k11": "Ücretsiz backtest",
+      "churn.offerTag": "ÜCRET YOK · KURULUM YOK · TAAHHÜT YOK",
+      "churn.offerH2":
+        "Çalışıp çalışmadığını<br><em>kendi verinizle görün.</em>",
+      "churn.askH3": "Sizden istediğimiz",
+      "churn.ask1": "İki CSV: geçmiş öğrenci kayıtları ve ayrılma tarihleri",
+      "churn.ask2": "Anonimleştirilmiş: isim, telefon, kimlik numarası yok",
+      "churn.ask3": "Tek seferlik; sistem kurulumu yok",
+      "churn.ask4":
+        "Kısa bilgi formu: ücret, temas maliyeti ve ekip kapasitesi",
+      "churn.getH3": "Size vereceğimiz, 2 hafta içinde",
+      "churn.get1": "Geçen dönemde kaç ayrılmayı, kaç gün önceden yakalardık",
+      "churn.get2": "Kapasitenize göre günlük liste ne kadar uzun olurdu",
+      "churn.get3":
+        "Veri kalitesi raporu: hangi kolon eksik, kaç satır kullanılamıyor",
+      "churn.get4": "Sonuç zayıf çıkarsa bunu da aynı netlikte yazarız",
+      "churn.n1T": "BUGÜN",
+      "churn.n1D": "Veriyi kimin, hangi sistemden çıkaracağına karar verin.",
+      "churn.n2T": "1 HAFTA İÇİNDE",
+      "churn.n2D": "Anonimleştirilmiş iki CSV bize ulaşır.",
+      "churn.n3T": "+2 HAFTA",
+      "churn.n3D": "Backtest raporu elinizde.",
+      "churn.n4T": "SONRA",
+      "churn.n4D": "Sayılara birlikte bakıp kuruluma başlarız.",
+      "churn.contactH2": "Tek ihtiyacımız<br><em>iki CSV dosyası.</em>",
+      "churn.footTag": "Öğrenci kaybı erken uyarı sistemi",
 
       "work.metaTitle": "EOAI Lab",
       "work.navCta": "Şimdi başvurun",
