@@ -6,12 +6,12 @@ import {
   serverTimestamp,
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
-// Public web config — safe to expose client-side. Write access to
+// Public web config: safe to expose client-side. Write access to
 // Firestore is restricted by security rules (see firestore.rules),
 // not by keeping this config secret.
 //
 // This uses the same Firebase project (and the same default Firestore
-// database) as apply.js, but writes into its own "clients" collection —
+// database) as apply.js, but writes into its own "clients" collection;
 // kept fully separate from the "applications" collection used by the
 // "Work with us" form.
 const firebaseConfig = {
@@ -33,7 +33,7 @@ if (form) {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    // Honeypot — bots tend to fill every field, humans never see this one.
+    // Honeypot: bots tend to fill every field, humans never see this one.
     // Guarded with optional chaining so a stale cached copy of this page
     // (missing the field, or using an older field name) can't crash instead
     // of just skipping the check.
@@ -69,7 +69,7 @@ if (form) {
         createdAt: serverTimestamp(),
       });
       form.reset();
-      statusEl.textContent = t("client.statusThanks", "Thanks — we've got it, and we'll be in touch.");
+      statusEl.textContent = t("client.statusThanks", "Thanks! We've got it and we'll be in touch.");
       statusEl.className = "form-status ok";
     } catch (err) {
       console.error("Client submit failed:", err);

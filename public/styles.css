@@ -14,3 +14,4 @@
 .manifesto-cta{position:relative;display:inline-flex;align-items:center;gap:10px;margin-top:6px;padding:17px 26px;background:var(--blue);color:#fff;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.01em;box-shadow:0 10px 30px rgba(53,104,236,.35);transition:background .25s,box-shadow .25s}.manifesto-cta b{font-size:18px;font-weight:400;transition:transform .25s}.manifesto-cta:hover{background:#4a7bff;box-shadow:0 12px 36px rgba(53,104,236,.5)}.manifesto-cta:hover b{transform:translate(3px,-3px)}.manifesto-cta:focus-visible{outline:2px solid #fff;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.orbit{animation:none}}
 .solution-top+.solution-flow{margin-top:36px}
+.accordion .answer{overflow:hidden}
