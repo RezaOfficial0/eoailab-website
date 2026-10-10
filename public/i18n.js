@@ -58,7 +58,7 @@
       "home.manifestoEyebrow": "The ownership principle",
       "home.manifestoH2":
         "Your data has a home.<br>Your software has a home.<br><em>Your intelligence should too.</em>",
-      "home.roundLink": "Start<br>here",
+      "home.roundLink": "Start here",
 
       "home.kicker02": "How we build",
       "home.processH2": "Intelligence,<br><em>made specific.</em>",
@@ -321,7 +321,7 @@
       "home.manifestoEyebrow": "Sahiplenme ilkesi",
       "home.manifestoH2":
         "Verinizin bir evi var.<br>Yazılımınızın bir evi var.<br><em>Zekânızın da olmalı.</em>",
-      "home.roundLink": "Buradan<br>başlayın",
+      "home.roundLink": "Buradan başlayın",
 
       "home.kicker02": "Nasıl inşa ediyoruz",
       "home.processH2": "Zekâ,<br><em>size özel.</em>",
