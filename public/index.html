@@ -44,7 +44,7 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> <span data-i18n="home.heroEyebrow">The Enterprise-Owned AI Agency</span></p>
+          <p class="eyebrow"><span></span> <span data-i18n="home.heroEyebrow">Production AI on your data, owned by you</span></p>
           <h1 data-i18n="home.heroH1">Own what<br /><em>thinks</em> for you.</h1>
           <p class="lede" data-i18n="home.heroLede">
             We architect private intelligence that belongs entirely to your
@@ -141,11 +141,8 @@
             >Your intelligence should too.</em
           >
         </h2>
-        <a
-          class="round-link"
-          href="become-a-client.html#apply"
-          aria-label="Start your EOAI journey"
-          ><span data-i18n="home.roundLink">Start<br />here</span> <b>↗</b></a
+        <a class="manifesto-cta" href="become-a-client.html#apply"
+          ><span data-i18n="home.roundLink">Start here</span> <b>↗</b></a
         >
       </section>
 
@@ -229,42 +226,25 @@
         </div>
         <div class="services-head">
           <h2 class="display reveal" data-i18n="home.servicesH2">
-            The full stack<br />of <em>ownership.</em>
+            Narrow focus.<br /><em>Deep ownership.</em>
           </h2>
           <p data-i18n="home.servicesP">
-            Strategy to sovereign infrastructure. We build the systems
-            underneath the promise.
+            Our focus today is education: catching student dropout before it
+            happens. The same core engine extends to any decision your own
+            data can inform.
           </p>
         </div>
         <div class="service-grid">
           <article>
             <span>01</span>
-            <h3 data-i18n="home.svc1Title">Enterprise<br />AI strategy</h3>
-            <p data-i18n="home.svc1Desc">Find the intelligent edge your business can truly own.</p>
-            <i>↗</i>
+            <h3 data-i18n="home.svc1Title">EO-Churn<br />early warning</h3>
+            <p data-i18n="home.svc1Desc">Who is about to leave, why, and what to do this week — every morning, for every active student.</p>
+            <a class="service-link" href="#eo-churn" data-i18n-aria-label="home.svc1Aria" aria-label="See EO-Churn">↗</a>
           </article>
           <article>
             <span>02</span>
-            <h3 data-i18n="home.svc2Title">Private<br />language models</h3>
-            <p data-i18n="home.svc2Desc">Models trained, tuned, and governed for your enterprise.</p>
-            <i>↗</i>
-          </article>
-          <article>
-            <span>03</span>
-            <h3 data-i18n="home.svc3Title">Agents &amp;<br />automation</h3>
-            <p data-i18n="home.svc3Desc">Autonomous systems that move work forward, safely.</p>
-            <i>↗</i>
-          </article>
-          <article>
-            <span>04</span>
-            <h3 data-i18n="home.svc4Title">Knowledge<br />systems</h3>
-            <p data-i18n="home.svc4Desc">RAG and retrieval architectures built around your truth.</p>
-            <i>↗</i>
-          </article>
-          <article>
-            <span>05</span>
-            <h3 data-i18n="home.svc5Title">AI infrastructure<br />&amp; security</h3>
-            <p data-i18n="home.svc5Desc">Private-by-design foundations that pass enterprise scrutiny.</p>
+            <h3 data-i18n="home.svc2Title">Enterprise-owned<br />AI systems</h3>
+            <p data-i18n="home.svc2Desc">Production systems trained on your own data, running in your environment, and handed over to you.</p>
             <i>↗</i>
           </article>
           <article class="service-cta">
@@ -272,6 +252,11 @@
             <a href="#contact"><span data-i18n="home.svcCtaLink">Tell us what<br />should be owned</span> <b>↗</b></a>
           </article>
         </div>
+        <p class="service-also" data-i18n="home.svcAlso">
+          We can also help with: private language models · agents &amp;
+          automation · knowledge systems (RAG) · AI infrastructure &amp;
+          security.
+        </p>
       </section>
 
       <section class="solutions section-pad" id="solutions">
@@ -281,12 +266,13 @@
         </div>
         <div class="solutions-head">
           <h2 class="display reveal" data-i18n="home.solutionsH2">
-            Solutions,<br />already <em>working.</em>
+            Built and tested.<br /><em>Now in pilot.</em>
           </h2>
           <p data-i18n="home.solutionsP">
-            Not concepts on a slide. Systems we build end-to-end — trained on
-            real data, explainable by design, and deployed on infrastructure
-            you control.
+            Not concepts on a slide: pipelines we built end to end,
+            explainable by design and deployable on infrastructure you
+            control. None is running at a client yet — the next step is a
+            backtest on your own data.
           </p>
         </div>
 
@@ -387,15 +373,15 @@
 
         <article class="solution reveal">
           <div class="solution-top">
-            <p class="tag" data-i18n="home.solTag">SOLUTION 02 · TELECOM · V1 DEMO</p>
+            <p class="tag" data-i18n="home.solTag">SOLUTION 02 · TELECOM · REFERENCE BUILD</p>
             <h3 data-i18n="home.solH3">AI-Assisted Customer<br />Churn Warning</h3>
             <p class="solution-copy" data-i18n="home.solCopy">
               A private early-warning system that scores every customer’s
-              likelihood of leaving — every morning, automatically. Trained
-              on a real telecom dataset of 3,333 customers, it doesn’t just
-              flag who’s at risk: it explains why, in terms your team can
-              act on, and delivers the answer straight into the tools you
-              already use.
+              likelihood of leaving — every morning, automatically — and
+              explains why, in terms your team can act on. We built it on a
+              well-known public telecom churn dataset to prove the pipeline
+              end to end: it shows the system works, not how accurate it
+              would be on your customers.
             </p>
           </div>
 
@@ -440,25 +426,6 @@
                 A Dockerized REST API plus a daily risk alert — where your
                 team already works.
               </p>
-            </div>
-          </div>
-
-          <div class="solution-metrics">
-            <div>
-              <strong>0.885</strong>
-              <p data-i18n="home.metric1Label">ROC-AUC<br />ranking quality</p>
-            </div>
-            <div>
-              <strong>86.9<span>%</span></strong>
-              <p data-i18n="home.metric2Label">Recall<br />126 of 145 churners caught</p>
-            </div>
-            <div>
-              <strong>0.689</strong>
-              <p data-i18n="home.metric3Label">F1 @ 0.73<br />tuned threshold</p>
-            </div>
-            <div>
-              <strong>14.49<span>%</span></strong>
-              <p data-i18n="home.metric4Label">Baseline churn<br />caught before it happens</p>
             </div>
           </div>
 
@@ -554,7 +521,7 @@
         </div>
         <div class="comparison-head">
           <h2 class="display reveal" data-i18n="home.comparisonH2">
-            An agency can<br />integrate AI.<br /><em>Or make it yours.</em>
+            A vendor can<br />rent you AI.<br /><em>Or make it yours.</em>
           </h2>
         </div>
         <div class="table-wrap">
@@ -562,7 +529,7 @@
             <thead>
               <tr>
                 <th data-i18n="home.thWhat">What changes</th>
-                <th data-i18n="home.thTraditional">Traditional AI agency</th>
+                <th data-i18n="home.thTraditional">Rented AI service</th>
                 <th>EOAI Lab</th>
               </tr>
             </thead>

@@ -19,7 +19,7 @@
 
       "home.metaTitle": "EOAI Lab — Own your intelligence.",
       "home.navCta": "Start a conversation",
-      "home.heroEyebrow": "The Enterprise-Owned AI Agency",
+      "home.heroEyebrow": "Production AI on your data, owned by you",
       "home.heroH1": "Own what<br>\n<em>thinks</em> for you.",
       "home.heroLede":
         "We architect private intelligence that belongs entirely to your enterprise — models, knowledge, workflows, and the advantage they create.",
@@ -58,7 +58,7 @@
       "home.manifestoEyebrow": "The ownership principle",
       "home.manifestoH2":
         "Your data has a home.<br>Your software has a home.<br><em>Your intelligence should too.</em>",
-      "home.roundLink": "Start<br>here",
+      "home.roundLink": "Start here",
 
       "home.kicker02": "How we build",
       "home.processH2": "Intelligence,<br><em>made specific.</em>",
@@ -81,27 +81,25 @@
         "Your system learns from your operation, making your advantage harder to replicate over time.",
 
       "home.kicker03": "What we make",
-      "home.servicesH2": "The full stack<br>of <em>ownership.</em>",
+      "home.servicesH2": "Narrow focus.<br><em>Deep ownership.</em>",
       "home.servicesP":
-        "Strategy to sovereign infrastructure. We build the systems underneath the promise.",
-      "home.svc1Title": "Enterprise<br>AI strategy",
-      "home.svc1Desc": "Find the intelligent edge your business can truly own.",
-      "home.svc2Title": "Private<br>language models",
-      "home.svc2Desc": "Models trained, tuned, and governed for your enterprise.",
-      "home.svc3Title": "Agents &amp;<br>automation",
-      "home.svc3Desc": "Autonomous systems that move work forward, safely.",
-      "home.svc4Title": "Knowledge<br>systems",
-      "home.svc4Desc": "RAG and retrieval architectures built around your truth.",
-      "home.svc5Title": "AI infrastructure<br>&amp; security",
-      "home.svc5Desc":
-        "Private-by-design foundations that pass enterprise scrutiny.",
+        "Our focus today is education: catching student dropout before it happens. The same core engine extends to any decision your own data can inform.",
+      "home.svc1Title": "EO-Churn<br>early warning",
+      "home.svc1Desc":
+        "Who is about to leave, why, and what to do this week — every morning, for every active student.",
+      "home.svc2Title": "Enterprise-owned<br>AI systems",
+      "home.svc2Desc":
+        "Production systems trained on your own data, running in your environment, and handed over to you.",
       "home.svcCtaP": "Don’t see a category for your opportunity?",
       "home.svcCtaLink": "Tell us what<br>should be owned",
+      "home.svc1Aria": "See EO-Churn",
+      "home.svcAlso":
+        "We can also help with: private language models · agents &amp; automation · knowledge systems (RAG) · AI infrastructure &amp; security.",
 
       "home.kicker04": "Services / Solutions",
-      "home.solutionsH2": "Solutions,<br>already <em>working.</em>",
+      "home.solutionsH2": "Built and tested.<br><em>Now in pilot.</em>",
       "home.solutionsP":
-        "Not concepts on a slide. Systems we build end-to-end — trained on real data, explainable by design, and deployed on infrastructure you control.",
+        "Not concepts on a slide: pipelines we built end to end, explainable by design and deployable on infrastructure you control. None is running at a client yet — the next step is a backtest on your own data.",
       "home.eocTag": "SOLUTION 01 · EDUCATION · V1 — PILOT STAGE",
       "home.eocH3": "EO-Churn: Student<br>Dropout Early Warning",
       "home.eocCopy":
@@ -134,10 +132,10 @@
         "DEMO SCREENS USE SYNTHETIC DATA — THEY SHOW THE PIPELINE WORKS END TO END, NOT THE PRODUCT’S ACCURACY",
       "home.eocFootLink": "Request a free backtest",
 
-      "home.solTag": "SOLUTION 02 · TELECOM · V1 DEMO",
+      "home.solTag": "SOLUTION 02 · TELECOM · REFERENCE BUILD",
       "home.solH3": "AI-Assisted Customer<br>Churn Warning",
       "home.solCopy":
-        "A private early-warning system that scores every customer’s likelihood of leaving — every morning, automatically. Trained on a real telecom dataset of 3,333 customers, it doesn’t just flag who’s at risk: it explains why, in terms your team can act on, and delivers the answer straight into the tools you already use.",
+        "A private early-warning system that scores every customer’s likelihood of leaving — every morning, automatically — and explains why, in terms your team can act on. We built it on a well-known public telecom churn dataset to prove the pipeline end to end: it shows the system works, not how accurate it would be on your customers.",
       "home.flow1Title": "Daily batch",
       "home.flow1Desc":
         "Yesterday’s customer data ingested every morning, preprocessed identically to training — same scaler, same features.",
@@ -150,10 +148,6 @@
       "home.flow4Title": "Delivery",
       "home.flow4Desc":
         "A Dockerized REST API plus a daily risk alert — where your team already works.",
-      "home.metric1Label": "ROC-AUC<br>ranking quality",
-      "home.metric2Label": "Recall<br>126 of 145 churners caught",
-      "home.metric3Label": "F1 @ 0.73<br>tuned threshold",
-      "home.metric4Label": "Baseline churn<br>caught before it happens",
       "home.solFootP":
         "TRAINING PIPELINE · DAILY BATCH · REST API · SHAP · DOCKER — ALL ON INFRASTRUCTURE YOU OWN",
       "home.solFootLink": "Ask about this solution",
@@ -183,9 +177,9 @@
 
       "home.kicker06": "The difference",
       "home.comparisonH2":
-        "An agency can<br>integrate AI.<br><em>Or make it yours.</em>",
+        "A vendor can<br>rent you AI.<br><em>Or make it yours.</em>",
       "home.thWhat": "What changes",
-      "home.thTraditional": "Traditional AI agency",
+      "home.thTraditional": "Rented AI service",
       "home.row1c1": "Core intelligence",
       "home.row1c2": "Rents third-party APIs",
       "home.row1c3": "Built for your enterprise",
@@ -288,7 +282,7 @@
 
       "home.metaTitle": "EOAI Lab — Zekânızı sahiplenin.",
       "home.navCta": "Bir görüşme başlatın",
-      "home.heroEyebrow": "Kurumsal Sahipli Yapay Zekâ Ajansı",
+      "home.heroEyebrow": "Kendi verinizle çalışan, size ait yapay zekâ",
       "home.heroH1": "Sizin için<br>\n<em>düşüneni</em> sahiplenin.",
       "home.heroLede":
         "Tamamen kurumunuza ait, özel bir zekâ mimarisi kuruyoruz — modeller, bilgi, iş akışları ve bunların yarattığı avantaj.",
@@ -327,7 +321,7 @@
       "home.manifestoEyebrow": "Sahiplenme ilkesi",
       "home.manifestoH2":
         "Verinizin bir evi var.<br>Yazılımınızın bir evi var.<br><em>Zekânızın da olmalı.</em>",
-      "home.roundLink": "Buradan<br>başlayın",
+      "home.roundLink": "Buradan başlayın",
 
       "home.kicker02": "Nasıl inşa ediyoruz",
       "home.processH2": "Zekâ,<br><em>size özel.</em>",
@@ -350,31 +344,25 @@
         "Sisteminiz operasyonunuzdan öğrenir ve zamanla avantajınızın taklit edilmesini zorlaştırır.",
 
       "home.kicker03": "Neler üretiyoruz",
-      "home.servicesH2": "Sahiplenmenin<br>tüm <em>katmanları.</em>",
+      "home.servicesH2": "Dar odak.<br><em>Derin sahiplik.</em>",
       "home.servicesP":
-        "Stratejiden bağımsız altyapıya. Vaadin arkasındaki sistemleri biz kuruyoruz.",
-      "home.svc1Title": "Kurumsal<br>yapay zekâ stratejisi",
+        "Bugünkü odağımız eğitim: öğrenci kaybını gerçekleşmeden yakalamak. Aynı çekirdek motor, kendi verinizin besleyebileceği her karara genişletilebilir.",
+      "home.svc1Title": "EO-Churn<br>erken uyarı",
       "home.svc1Desc":
-        "İşletmenizin gerçekten sahiplenebileceği zekâ avantajını bulun.",
-      "home.svc2Title": "Özel<br>dil modelleri",
+        "Kim ayrılmak üzere, neden ve bu hafta ne yapılmalı — her sabah, aktif her öğrenci için.",
+      "home.svc2Title": "Kuruma ait<br>yapay zekâ sistemleri",
       "home.svc2Desc":
-        "Kurumunuz için eğitilmiş, ayarlanmış ve yönetilen modeller.",
-      "home.svc3Title": "Ajanlar ve<br>otomasyon",
-      "home.svc3Desc":
-        "İşi güvenli bir şekilde ileriye taşıyan otonom sistemler.",
-      "home.svc4Title": "Bilgi<br>sistemleri",
-      "home.svc4Desc":
-        "Sizin gerçeğiniz etrafında kurulmuş RAG ve bilgi erişim mimarileri.",
-      "home.svc5Title": "Yapay zekâ altyapısı<br>ve güvenlik",
-      "home.svc5Desc":
-        "Kurumsal denetimden geçen, tasarımdan itibaren özel temeller.",
+        "Kendi verinizle eğitilen, sizin ortamınızda çalışan ve size teslim edilen üretim sistemleri.",
       "home.svcCtaP": "Fırsatınıza uygun bir kategori göremiyor musunuz?",
       "home.svcCtaLink": "Neyin sahiplenilmesi<br>gerektiğini anlatın",
+      "home.svc1Aria": "EO-Churn’ü inceleyin",
+      "home.svcAlso":
+        "Ayrıca şunlarda da yardımcı olabiliriz: özel dil modelleri · ajanlar ve otomasyon · bilgi sistemleri (RAG) · yapay zekâ altyapısı ve güvenlik.",
 
       "home.kicker04": "Hizmetler / Çözümler",
-      "home.solutionsH2": "Zaten <em>çalışan</em><br>çözümler.",
+      "home.solutionsH2": "Kuruldu, test edildi.<br><em>Şimdi pilotta.</em>",
       "home.solutionsP":
-        "Slaytta kalan kavramlar değil. Uçtan uca kurduğumuz sistemler — gerçek verilerle eğitilmiş, tasarımdan itibaren açıklanabilir ve kontrolünüzdeki altyapıda devreye alınmış.",
+        "Slaytta kalan kavramlar değil: uçtan uca kurduğumuz, tasarımdan itibaren açıklanabilir ve kontrolünüzdeki altyapıda çalışabilen sistemler. Henüz hiçbiri bir müşteride canlı çalışmıyor — sıradaki adım sizin verinizle bir backtest.",
       "home.eocTag": "ÇÖZÜM 01 · EĞİTİM · V1 — PİLOT AŞAMASINDA",
       "home.eocH3": "EO-Churn: Öğrenci Kaybı<br>Erken Uyarı Sistemi",
       "home.eocCopy":
@@ -407,10 +395,10 @@
         "DEMO EKRANLARI SENTETİK VERİ KULLANIR — BORU HATTININ UÇTAN UCA ÇALIŞTIĞINI GÖSTERİR, ÜRÜNÜN DOĞRULUĞUNU DEĞİL",
       "home.eocFootLink": "Ücretsiz backtest isteyin",
 
-      "home.solTag": "ÇÖZÜM 02 · TELEKOM · V1 DEMO",
+      "home.solTag": "ÇÖZÜM 02 · TELEKOM · REFERANS ÇALIŞMA",
       "home.solH3": "Yapay Zekâ Destekli<br>Müşteri Kaybı Uyarısı",
       "home.solCopy":
-        "Her sabah otomatik olarak her müşterinin ayrılma olasılığını puanlayan özel bir erken uyarı sistemi. 3.333 müşteriden oluşan gerçek bir telekom veri setiyle eğitilen sistem, yalnızca kimin risk altında olduğunu değil, ekibinizin harekete geçebileceği şekilde nedenini de açıklar ve sonucu zaten kullandığınız araçlara doğrudan iletir.",
+        "Her sabah otomatik olarak her müşterinin ayrılma olasılığını puanlayan ve nedenini ekibinizin harekete geçebileceği şekilde açıklayan özel bir erken uyarı sistemi. Boru hattını uçtan uca kanıtlamak için herkesçe bilinen, halka açık bir telekom churn veri setiyle kurduk: sistemin çalıştığını gösterir, sizin müşterilerinizde ne kadar doğru olacağını değil.",
       "home.flow1Title": "Günlük toplu işlem",
       "home.flow1Desc":
         "Dünün müşteri verileri her sabah alınır ve eğitimle birebir aynı şekilde işlenir — aynı ölçekleyici, aynı öznitelikler.",
@@ -423,10 +411,6 @@
       "home.flow4Title": "Teslimat",
       "home.flow4Desc":
         "Dockerize edilmiş bir REST API ve ekibinizin zaten çalıştığı yere gönderilen günlük bir risk uyarısı.",
-      "home.metric1Label": "ROC-AUC<br>sıralama kalitesi",
-      "home.metric2Label": "Duyarlılık<br>145 kayıptan 126’sı yakalandı",
-      "home.metric3Label": "F1 @ 0,73<br>ayarlanmış eşik",
-      "home.metric4Label": "Temel kayıp oranı<br>gerçekleşmeden önce yakalanır",
       "home.solFootP":
         "EĞİTİM HATTI · GÜNLÜK TOPLU İŞLEM · REST API · SHAP · DOCKER — TAMAMI SİZİN ALTYAPINIZDA",
       "home.solFootLink": "Bu çözüm hakkında bilgi alın",
@@ -456,9 +440,9 @@
 
       "home.kicker06": "Fark",
       "home.comparisonH2":
-        "Bir ajans yapay zekâyı<br>entegre edebilir.<br><em>Ya da sizin yapabilir.</em>",
+        "Bir sağlayıcı size<br>yapay zekâ kiralar.<br><em>Ya da sizin olur.</em>",
       "home.thWhat": "Ne değişir",
-      "home.thTraditional": "Geleneksel yapay zekâ ajansı",
+      "home.thTraditional": "Kiralık yapay zekâ servisi",
       "home.row1c1": "Temel zekâ",
       "home.row1c2": "Üçüncü taraf API’ler kiralar",
       "home.row1c3": "Kurumunuz için inşa edilir",
