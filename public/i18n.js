@@ -11,7 +11,7 @@
     en: {
       "nav.capabilities": "Capabilities",
       "nav.solutions": "Solutions",
-      "nav.caseStudy": "Case study",
+      "nav.caseStudy": "How it works",
       "nav.about": "About",
       "nav.workWithUs": "Work with us",
       "nav.brandAria": "EOAI Lab home",
@@ -102,7 +102,39 @@
       "home.solutionsH2": "Solutions,<br>already <em>working.</em>",
       "home.solutionsP":
         "Not concepts on a slide. Systems we build end-to-end — trained on real data, explainable by design, and deployed on infrastructure you control.",
-      "home.solTag": "SOLUTION 01 · V1 DEMO",
+      "home.eocTag": "SOLUTION 01 · EDUCATION · V1 — PILOT STAGE",
+      "home.eocH3": "EO-Churn: Student<br>Dropout Early Warning",
+      "home.eocCopy":
+        "A student doesn’t leave overnight. Replies slow down, mock-exam scores slip, payments run late, attendance drops — signals your systems already record but nobody reads together. Every morning, EO-Churn answers three questions for each active student: who is about to leave, why, and what your team should do this week.",
+      "home.eocShot1Alt":
+        "EO-Churn daily risk list: students ranked by dropout probability, each with its top three SHAP reasons",
+      "home.eocShot1Cap":
+        "Daily risk list — ranked by probability, top three reasons per student.",
+      "home.eocShot2Alt":
+        "EO-Churn outreach draft: a mentor message chosen from approved templates, marked as not sent",
+      "home.eocShot2Cap":
+        "Outreach draft — picked from your approved templates, never sent automatically.",
+      "home.eocFlow1Title": "Export &amp; mapping",
+      "home.eocFlow1Desc":
+        "A CSV or LMS export from the system you already use. Your column headers are mapped to our schema once — no new data collection.",
+      "home.eocFlow2Title": "Trained on your history",
+      "home.eocFlow2Desc":
+        "Not another institution’s data. Unusable rows are set aside and reported back to you.",
+      "home.eocFlow3Title": "Every morning at 09:00",
+      "home.eocFlow3Desc":
+        "Every active student re-scored. A ranked list with reasons, sized to your team’s capacity — on the dashboard, by e-mail, Telegram, or webhook.",
+      "home.eocFlow4Title": "Mentor action &amp; feedback",
+      "home.eocFlow4Desc":
+        "The mentor reaches out and logs the outcome. That outcome feeds the next training run, so the model adapts to your institution.",
+      "home.eocFact1": "Daily risk list,<br>no login needed",
+      "home.eocFact2": "Reasons per student,<br>by column name (SHAP)",
+      "home.eocFact3": "Identity fields needed —<br>an anonymous code is enough",
+      "home.eocFact4": "Messages sent without<br>human approval",
+      "home.eocFootP":
+        "DEMO SCREENS USE SYNTHETIC DATA — THEY SHOW THE PIPELINE WORKS END TO END, NOT THE PRODUCT’S ACCURACY",
+      "home.eocFootLink": "Request a free backtest",
+
+      "home.solTag": "SOLUTION 02 · TELECOM · V1 DEMO",
       "home.solH3": "AI-Assisted Customer<br>Churn Warning",
       "home.solCopy":
         "A private early-warning system that scores every customer’s likelihood of leaving — every morning, automatically. Trained on a real telecom dataset of 3,333 customers, it doesn’t just flag who’s at risk: it explains why, in terms your team can act on, and delivers the answer straight into the tools you already use.",
@@ -128,24 +160,26 @@
       "home.solMoreP": "More solutions are in active development.",
       "home.solMoreLink": "Tell us what you’d<br>want us to build",
 
-      "home.kicker05": "Selected work",
-      "home.caseTag": "ILLUSTRATIVE ENGAGEMENT",
-      "home.caseH2":
-        "A private intelligence<br>layer for <em>customer loyalty.</em>",
+      "home.kicker05": "How EO-Churn works",
+      "home.caseTag": "THE REAL ARCHITECTURE",
+      "home.caseH2": "One core engine.<br>Your <em>column mapping.</em>",
       "home.caseCopy":
-        "For a global hospitality group, we designed a proprietary intelligence system that understands individual guest context across every property, every moment.",
-      "home.caseLink1": "Explore an EOAI brief",
-      "home.caseLink2": "Download the Paper",
-      "home.archTag1": "EOAI ARCHITECTURE",
-      "home.archTag2": "PRIVATE / SECURE / COMPOUNDING",
-      "home.arch1": "Guest<br>signals",
-      "home.arch2": "Private<br>knowledge",
-      "home.arch3": "Loyalty<br>intelligence",
-      "home.arch4": "Personalized<br>actions",
-      "home.caseMetric1": "faster response<br>to guest intent",
-      "home.caseMetric2": "more decisions<br>automated",
-      "home.caseMetric3": "customer data<br>leaves the estate",
-      "home.metricsNote": "Sample outcomes shown for illustrative purposes.",
+        "EO-Churn isn’t rewritten for every client. The core engine stays the same; only a mapping file that translates your column headers into our schema changes. The model is trained on your own student history, runs in your environment, and its weights are handed over to you — it keeps working even if our relationship ends.",
+      "home.caseLink1": "Request a free backtest",
+      "home.caseLink2": "Read the EOAI paper",
+      "home.archTag1": "EO-CHURN ARCHITECTURE",
+      "home.archTag2": "YOUR ENVIRONMENT / YOUR MODEL",
+      "home.arch1": "CSV / LMS<br>export",
+      "home.arch2": "Column<br>mapping",
+      "home.arch3": "Calibrated model<br>+ SHAP",
+      "home.arch4": "Ranked list,<br>reasons, draft",
+      "home.claimsH3": "What we don’t claim yet",
+      "home.claim1":
+        "We don’t have a field case study yet. EO-Churn is in pilot stage and isn’t running at an institution today.",
+      "home.claim2":
+        "The numbers in our demo come from synthetic data. They show the pipeline works end to end — they are not the product’s accuracy.",
+      "home.claim3":
+        "The real number comes from your data. Send two anonymized CSVs and within two weeks you’ll see how many dropouts we would have caught last term, and how many days early. If the result is weak, we’ll say so just as clearly.",
 
       "home.kicker06": "The difference",
       "home.comparisonH2":
@@ -187,6 +221,7 @@
       "home.contactH2":
         "It’s time to own<br><em>what makes you different.</em>",
       "home.contactFootTag": "Enterprise-Owned Artificial Intelligence",
+      "home.toTopAria": "Back to top",
 
       "work.metaTitle": "Work with us — EOAI Lab",
       "work.navCta": "Apply now",
@@ -245,7 +280,7 @@
     tr: {
       "nav.capabilities": "Yetenekler",
       "nav.solutions": "Çözümler",
-      "nav.caseStudy": "Vaka analizi",
+      "nav.caseStudy": "Nasıl çalışır",
       "nav.about": "Hakkımızda",
       "nav.workWithUs": "Bizimle çalışın",
       "nav.brandAria": "EOAI Lab ana sayfa",
@@ -340,7 +375,39 @@
       "home.solutionsH2": "Zaten <em>çalışan</em><br>çözümler.",
       "home.solutionsP":
         "Slaytta kalan kavramlar değil. Uçtan uca kurduğumuz sistemler — gerçek verilerle eğitilmiş, tasarımdan itibaren açıklanabilir ve kontrolünüzdeki altyapıda devreye alınmış.",
-      "home.solTag": "ÇÖZÜM 01 · V1 DEMO",
+      "home.eocTag": "ÇÖZÜM 01 · EĞİTİM · V1 — PİLOT AŞAMASINDA",
+      "home.eocH3": "EO-Churn: Öğrenci Kaybı<br>Erken Uyarı Sistemi",
+      "home.eocCopy":
+        "Bir öğrenci bir sabah aniden ayrılmaz. Önce mesajlara geç döner, deneme netleri düşer, ödeme gecikir, derse devamı azalır. Bu sinyaller sisteminizde zaten kayıtlıdır — ama hiçbir yerde birlikte okunmaz. EO-Churn her sabah, aktif her öğrenci için üç soruyu cevaplar: kim ayrılmak üzere, neden ve ekibiniz bu hafta ne yapmalı.",
+      "home.eocShot1Alt":
+        "EO-Churn günlük risk listesi: ayrılma olasılığına göre sıralı öğrenciler ve her biri için öne çıkan üç SHAP sebebi",
+      "home.eocShot1Cap":
+        "Günlük risk listesi — olasılığa göre sıralı, her öğrenci için öne çıkan üç sebep.",
+      "home.eocShot2Alt":
+        "EO-Churn temas taslağı: onaylı şablonlardan seçilmiş, gönderilmemiş bir mentor mesajı",
+      "home.eocShot2Cap":
+        "Temas taslağı — kurumun onaylı şablonlarından seçilir, asla otomatik gönderilmez.",
+      "home.eocFlow1Title": "Dışa aktarım ve eşleme",
+      "home.eocFlow1Desc":
+        "Hâlihazırda kullandığınız sistemden bir CSV veya LMS dışa aktarımı. Kolon başlıklarınız şemamıza bir kez eşlenir — yeni veri toplamıyoruz.",
+      "home.eocFlow2Title": "Kendi geçmişinizle eğitim",
+      "home.eocFlow2Desc":
+        "Başka bir kurumun verisiyle değil. Kullanılamayan satırlar ayrılır ve size raporlanır.",
+      "home.eocFlow3Title": "Her sabah 09.00’da",
+      "home.eocFlow3Desc":
+        "Aktif öğrencilerin tamamı yeniden puanlanır. Ekibinizin kapasitesi kadar, sebepleriyle sıralı bir liste — panelde, e-postada, Telegram’da veya webhook ile.",
+      "home.eocFlow4Title": "Mentor aksiyonu ve geri besleme",
+      "home.eocFlow4Desc":
+        "Mentor temas kurar, sonucu panele işler. Bu sonuç bir sonraki eğitime girer; model zamanla kurumunuza uyum sağlar.",
+      "home.eocFact1": "Günlük risk listesi,<br>panele girmeye gerek yok",
+      "home.eocFact2": "Öğrenci başına sebep,<br>kolon adıyla (SHAP)",
+      "home.eocFact3": "Kimlik bilgisi gerekmez —<br>anonim bir kod yeterli",
+      "home.eocFact4": "İnsan onayı olmadan<br>gönderilen mesaj",
+      "home.eocFootP":
+        "DEMO EKRANLARI SENTETİK VERİ KULLANIR — BORU HATTININ UÇTAN UCA ÇALIŞTIĞINI GÖSTERİR, ÜRÜNÜN DOĞRULUĞUNU DEĞİL",
+      "home.eocFootLink": "Ücretsiz backtest isteyin",
+
+      "home.solTag": "ÇÖZÜM 02 · TELEKOM · V1 DEMO",
       "home.solH3": "Yapay Zekâ Destekli<br>Müşteri Kaybı Uyarısı",
       "home.solCopy":
         "Her sabah otomatik olarak her müşterinin ayrılma olasılığını puanlayan özel bir erken uyarı sistemi. 3.333 müşteriden oluşan gerçek bir telekom veri setiyle eğitilen sistem, yalnızca kimin risk altında olduğunu değil, ekibinizin harekete geçebileceği şekilde nedenini de açıklar ve sonucu zaten kullandığınız araçlara doğrudan iletir.",
@@ -366,24 +433,26 @@
       "home.solMoreP": "Daha fazla çözüm aktif olarak geliştiriliyor.",
       "home.solMoreLink": "Ne inşa etmemizi<br>istediğinizi anlatın",
 
-      "home.kicker05": "Seçilmiş çalışma",
-      "home.caseTag": "ÖRNEK PROJE",
-      "home.caseH2":
-        "Müşteri sadakati için<br>özel bir <em>zekâ katmanı.</em>",
+      "home.kicker05": "EO-Churn nasıl çalışır",
+      "home.caseTag": "GERÇEK MİMARİ",
+      "home.caseH2": "Tek çekirdek motor.<br>Sizin <em>kolon eşlemeniz.</em>",
       "home.caseCopy":
-        "Küresel bir konaklama grubu için, her tesiste ve her anda misafirin bireysel bağlamını anlayan özel bir zekâ sistemi tasarladık.",
-      "home.caseLink1": "Bir EOAI özetini inceleyin",
-      "home.caseLink2": "Raporu indirin",
-      "home.archTag1": "EOAI MİMARİSİ",
-      "home.archTag2": "ÖZEL / GÜVENLİ / KATLANARAK BÜYÜYEN",
-      "home.arch1": "Misafir<br>sinyalleri",
-      "home.arch2": "Özel<br>bilgi",
-      "home.arch3": "Sadakat<br>zekâsı",
-      "home.arch4": "Kişiselleştirilmiş<br>eylemler",
-      "home.caseMetric1": "misafir niyetine<br>daha hızlı yanıt",
-      "home.caseMetric2": "daha fazla karar<br>otomatikleştirildi",
-      "home.caseMetric3": "müşteri verisi<br>tesisten dışarı çıkıyor",
-      "home.metricsNote": "Örnek sonuçlar yalnızca gösterim amaçlıdır.",
+        "EO-Churn her müşteri için sıfırdan yazılmaz. Çekirdek motor aynı kalır; yalnızca kolon başlıklarınızı şemamıza çeviren eşleme dosyası değişir. Model kendi öğrenci geçmişinizle eğitilir, sizin ortamınızda çalışır ve ağırlıkları size teslim edilir — iş ilişkimiz sona erse bile çalışmaya devam eder.",
+      "home.caseLink1": "Ücretsiz backtest isteyin",
+      "home.caseLink2": "EOAI makalesini okuyun",
+      "home.archTag1": "EO-CHURN MİMARİSİ",
+      "home.archTag2": "SİZİN ORTAMINIZ / SİZİN MODELİNİZ",
+      "home.arch1": "CSV / LMS<br>dışa aktarımı",
+      "home.arch2": "Kolon<br>eşleme",
+      "home.arch3": "Kalibre model<br>+ SHAP",
+      "home.arch4": "Sıralı liste,<br>sebepler, taslak",
+      "home.claimsH3": "Henüz iddia etmediklerimiz",
+      "home.claim1":
+        "Henüz sahadan bir vaka çalışmamız yok. EO-Churn pilot aşamasında; bugün bir kurumda canlı çalışmıyor.",
+      "home.claim2":
+        "Demodaki sayılar sentetik veriden geliyor. Boru hattının uçtan uca çalıştığını gösterir — ürünün doğruluğu değildir.",
+      "home.claim3":
+        "Gerçek sayı sizin verinizden çıkar. Anonimleştirilmiş iki CSV gönderin; iki hafta içinde geçen dönem kaç ayrılmayı, kaç gün önceden yakalardık görün. Sonuç zayıf çıkarsa bunu da aynı netlikte yazarız.",
 
       "home.kicker06": "Fark",
       "home.comparisonH2":
@@ -425,6 +494,7 @@
       "home.contactH2":
         "Sizi farklı kılanı<br><em>sahiplenme zamanı.</em>",
       "home.contactFootTag": "Kurumsal Sahipli Yapay Zekâ",
+      "home.toTopAria": "Başa dön",
 
       "work.metaTitle": "Bizimle çalışın — EOAI Lab",
       "work.navCta": "Şimdi başvurun",
@@ -484,9 +554,45 @@
     },
   };
 
+  // The home page has a shareable Turkish URL: /tr. Firebase rewrites it to
+  // index.html, so the path is the only thing that tells us the language.
+  const TR_PATH = /^\/tr(\/|$)/;
+  const path = window.location.pathname;
+  const isHome = path === "/" || path === "/index.html" || TR_PATH.test(path);
+
+  function readSaved() {
+    try {
+      return localStorage.getItem(STORAGE_KEY);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function prefersTurkish() {
+    const langs = navigator.languages || [navigator.language || ""];
+    return langs.some((l) => /^tr\b/i.test(l));
+  }
+
+  // Resolved once on load: an explicit /tr URL wins, then a saved choice,
+  // then (home page only) the browser language.
+  let currentLang = (function () {
+    if (TR_PATH.test(path)) return "tr";
+    const saved = readSaved();
+    if (saved === "tr" || saved === "en") return saved;
+    return isHome && prefersTurkish() ? "tr" : "en";
+  })();
+
   function getLang() {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    return saved === "tr" ? "tr" : "en";
+    return currentLang;
+  }
+
+  // Keep the address bar in sync on the home page so the link a visitor
+  // copies opens in the language they're reading.
+  function syncUrl(lang) {
+    if (!isHome) return;
+    const target = lang === "tr" ? "/tr" : "/";
+    if (window.location.pathname === target) return;
+    history.replaceState(null, "", target + window.location.search + window.location.hash);
   }
 
   function t(key) {
@@ -510,6 +616,10 @@
       const key = el.getAttribute("data-i18n-aria-label");
       if (dict[key] !== undefined) el.setAttribute("aria-label", dict[key]);
     });
+    document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-alt");
+      if (dict[key] !== undefined) el.setAttribute("alt", dict[key]);
+    });
 
     const titleKey = document.body.getAttribute("data-i18n-title");
     if (titleKey && dict[titleKey] !== undefined) document.title = dict[titleKey];
@@ -522,11 +632,22 @@
   }
 
   function setLang(lang) {
-    localStorage.setItem(STORAGE_KEY, lang);
+    currentLang = lang;
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (e) {}
+    syncUrl(lang);
     applyLang(lang);
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    // Landing on /tr counts as choosing Turkish, so the other pages follow.
+    if (TR_PATH.test(path)) {
+      try {
+        localStorage.setItem(STORAGE_KEY, "tr");
+      } catch (e) {}
+    }
+    syncUrl(getLang());
     applyLang(getLang());
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
