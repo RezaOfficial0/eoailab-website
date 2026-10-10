@@ -15,3 +15,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.orbit{animation:none}}
 .solution-top+.solution-flow{margin-top:36px}
 .accordion .answer{overflow:hidden}
+.nav .brand{display:flex;align-items:center}.nav .brand img{display:block;height:36px;width:auto}
+@media(max-width:750px){.nav .brand img{height:30px}}
