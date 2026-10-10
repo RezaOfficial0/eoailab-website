@@ -280,10 +280,10 @@
       "nav.brandAria": "EOAI Lab ana sayfa",
       "nav.menuAria": "Menüyü aç",
 
-      "home.metaTitle": "EOAI Lab — Zekânızı sahiplenin.",
+      "home.metaTitle": "EOAI Lab — Sizin için düşünen sistem sizin olsun.",
       "home.navCta": "Bir görüşme başlatın",
       "home.heroEyebrow": "Kendi verinizle çalışan, size ait yapay zekâ",
-      "home.heroH1": "Sizin için<br>\n<em>düşüneni</em> sahiplenin.",
+      "home.heroH1": "Sizin için düşünen<br>sistem <em>sizin olsun.</em>",
       "home.heroLede":
         "Tamamen kurumunuza ait, özel bir zekâ mimarisi kuruyoruz — modeller, bilgi, iş akışları ve bunların yarattığı avantaj.",
       "home.heroCtaGhost": "EOAI’yi keşfedin",
@@ -476,7 +476,7 @@
 
       "home.contactEyebrow": "Bir sonraki kurumsal avantaj",
       "home.contactH2":
-        "Sizi farklı kılanı<br><em>sahiplenme zamanı.</em>",
+        "Sizi farklı kılan şey<br><em>sizin olsun.</em>",
       "home.contactFootTag": "Kurumsal Sahipli Yapay Zekâ",
       "home.toTopAria": "Başa dön",
 

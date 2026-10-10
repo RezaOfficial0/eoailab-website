@@ -1,4 +1,4 @@
-const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('visible') }), { threshold: .14 });
+const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('visible') }), { threshold: 0, rootMargin: '0px 0px -8% 0px' });
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 const toTop = document.querySelector('.to-top');
 if (toTop) { const sync = () => toTop.classList.toggle('show', window.scrollY > window.innerHeight * 0.8); window.addEventListener('scroll', sync, { passive: true }); sync(); toTop.addEventListener('click', (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); history.replaceState(null, '', window.location.pathname + window.location.search); }); }
