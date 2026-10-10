@@ -9,6 +9,9 @@
     />
     <meta name="theme-color" content="#07080d" />
     <title>EOAI Lab — Own your intelligence.</title>
+    <link rel="alternate" hreflang="en" href="https://www.eoailab.com/" />
+    <link rel="alternate" hreflang="tr" href="https://www.eoailab.com/tr" />
+    <link rel="alternate" hreflang="x-default" href="https://www.eoailab.com/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +31,7 @@
       <nav>
         <a href="#eoai">EOAI</a><a href="#services" data-i18n="nav.capabilities">Capabilities</a
         ><a href="#solutions" data-i18n="nav.solutions">Solutions</a
-        ><a href="#case-study" data-i18n="nav.caseStudy">Case study</a><a href="#about" data-i18n="nav.about">About</a
+        ><a href="#how-it-works" data-i18n="nav.caseStudy">How it works</a><a href="#about" data-i18n="nav.about">About</a
         ><a href="work-with-us.html" data-i18n="nav.workWithUs">Work with us</a>
       </nav>
       <a class="nav-cta" href="become-a-client.html#apply"><span data-i18n="home.navCta">Start a conversation</span> <b>↗</b></a>
@@ -287,9 +290,104 @@
           </p>
         </div>
 
+        <article class="solution reveal" id="eo-churn">
+          <div class="solution-top">
+            <p class="tag" data-i18n="home.eocTag">SOLUTION 01 · EDUCATION · V1 — PILOT STAGE</p>
+            <h3 data-i18n="home.eocH3">EO-Churn: Student<br />Dropout Early Warning</h3>
+            <p class="solution-copy" data-i18n="home.eocCopy">
+              A student doesn’t leave overnight. Replies slow down, mock-exam
+              scores slip, payments run late, attendance drops — signals your
+              systems already record but nobody reads together. Every morning,
+              EO-Churn answers three questions for each active student: who is
+              about to leave, why, and what your team should do this week.
+            </p>
+          </div>
+
+          <div class="solution-shots">
+            <figure>
+              <img src="eo-churn-risk-list.png" width="1213" height="830" loading="lazy"
+                data-i18n-alt="home.eocShot1Alt"
+                alt="EO-Churn daily risk list: students ranked by dropout probability, each with its top three SHAP reasons" />
+              <figcaption data-i18n="home.eocShot1Cap">Daily risk list — ranked by probability, top three reasons per student.</figcaption>
+            </figure>
+            <figure>
+              <img src="eo-churn-draft.png" width="650" height="500" loading="lazy"
+                data-i18n-alt="home.eocShot2Alt"
+                alt="EO-Churn outreach draft: a mentor message chosen from approved templates, marked as not sent" />
+              <figcaption data-i18n="home.eocShot2Cap">Outreach draft — picked from your approved templates, never sent automatically.</figcaption>
+            </figure>
+          </div>
+
+          <div class="solution-flow">
+            <div>
+              <span>01</span>
+              <h4 data-i18n="home.eocFlow1Title">Export &amp; mapping</h4>
+              <p data-i18n="home.eocFlow1Desc">
+                A CSV or LMS export from the system you already use. Your
+                column headers are mapped to our schema once — no new data
+                collection.
+              </p>
+            </div>
+            <div>
+              <span>02</span>
+              <h4 data-i18n="home.eocFlow2Title">Trained on your history</h4>
+              <p data-i18n="home.eocFlow2Desc">
+                Not another institution’s data. Unusable rows are set aside
+                and reported back to you.
+              </p>
+            </div>
+            <div>
+              <span>03</span>
+              <h4 data-i18n="home.eocFlow3Title">Every morning at 09:00</h4>
+              <p data-i18n="home.eocFlow3Desc">
+                Every active student re-scored. A ranked list with reasons,
+                sized to your team’s capacity — on the dashboard, by e-mail,
+                Telegram, or webhook.
+              </p>
+            </div>
+            <div>
+              <span>04</span>
+              <h4 data-i18n="home.eocFlow4Title">Mentor action &amp; feedback</h4>
+              <p data-i18n="home.eocFlow4Desc">
+                The mentor reaches out and logs the outcome. That outcome feeds
+                the next training run, so the model adapts to your institution.
+              </p>
+            </div>
+          </div>
+
+          <div class="solution-metrics">
+            <div>
+              <strong>09:00</strong>
+              <p data-i18n="home.eocFact1">Daily risk list,<br />no login needed</p>
+            </div>
+            <div>
+              <strong>3</strong>
+              <p data-i18n="home.eocFact2">Reasons per student,<br />by column name (SHAP)</p>
+            </div>
+            <div>
+              <strong>0</strong>
+              <p data-i18n="home.eocFact3">Identity fields needed —<br />an anonymous code is enough</p>
+            </div>
+            <div>
+              <strong>0</strong>
+              <p data-i18n="home.eocFact4">Messages sent without<br />human approval</p>
+            </div>
+          </div>
+
+          <div class="solution-foot">
+            <p data-i18n="home.eocFootP">
+              DEMO SCREENS USE SYNTHETIC DATA — THEY SHOW THE PIPELINE WORKS END
+              TO END, NOT THE PRODUCT’S ACCURACY
+            </p>
+            <a class="text-link" href="become-a-client.html#apply"
+              ><span data-i18n="home.eocFootLink">Request a free backtest</span> <b>↗</b></a
+            >
+          </div>
+        </article>
+
         <article class="solution reveal">
           <div class="solution-top">
-            <p class="tag" data-i18n="home.solTag">SOLUTION 01 · V1 DEMO</p>
+            <p class="tag" data-i18n="home.solTag">SOLUTION 02 · TELECOM · V1 DEMO</p>
             <h3 data-i18n="home.solH3">AI-Assisted Customer<br />Churn Warning</h3>
             <p class="solution-copy" data-i18n="home.solCopy">
               A private early-warning system that scores every customer’s
@@ -381,66 +479,71 @@
         </div>
       </section>
 
-      <section class="case section-pad" id="case-study">
+      <section class="case section-pad" id="how-it-works">
         <div class="section-kicker">
           <span>05</span>
-          <p data-i18n="home.kicker05">Selected work</p>
+          <p data-i18n="home.kicker05">How EO-Churn works</p>
         </div>
         <div class="case-title">
-          <p class="tag" data-i18n="home.caseTag">ILLUSTRATIVE ENGAGEMENT</p>
+          <p class="tag" data-i18n="home.caseTag">THE REAL ARCHITECTURE</p>
           <h2 class="display reveal" data-i18n="home.caseH2">
-            A private intelligence<br />layer for <em>customer loyalty.</em>
+            One core engine.<br />Your <em>column mapping.</em>
           </h2>
         </div>
         <div class="case-layout">
           <div class="case-copy">
             <p data-i18n="home.caseCopy">
-              For a global hospitality group, we designed a proprietary
-              intelligence system that understands individual guest context
-              across every property, every moment.
+              EO-Churn isn’t rewritten for every client. The core engine stays
+              the same; only a mapping file that translates your column
+              headers into our schema changes. The model is trained on your
+              own student history, runs in your environment, and its weights
+              are handed over to you — it keeps working even if our
+              relationship ends.
             </p>
-            <a class="text-link" href="#contact"
-              ><span data-i18n="home.caseLink1">Explore an EOAI brief</span> <b>↗</b></a
+            <a class="text-link" href="become-a-client.html#apply"
+              ><span data-i18n="home.caseLink1">Request a free backtest</span> <b>↗</b></a
             >
              <a class="text-link" href="file.pdf" target="_blank"
-              ><span data-i18n="home.caseLink2">Download the Paper</span> <b>↗</b></a
+              ><span data-i18n="home.caseLink2">Read the EOAI paper</span> <b>↗</b></a
             >
           </div>
           <div class="architecture">
             <div class="arch-head">
-              <span data-i18n="home.archTag1">EOAI ARCHITECTURE</span
-              ><span data-i18n="home.archTag2">PRIVATE / SECURE / COMPOUNDING</span>
+              <span data-i18n="home.archTag1">EO-CHURN ARCHITECTURE</span
+              ><span data-i18n="home.archTag2">YOUR ENVIRONMENT / YOUR MODEL</span>
             </div>
             <div class="arch-flow">
-              <div data-i18n="home.arch1">Guest<br />signals</div>
+              <div data-i18n="home.arch1">CSV / LMS<br />export</div>
               <i>→</i>
-              <div data-i18n="home.arch2">Private<br />knowledge</div>
+              <div data-i18n="home.arch2">Column<br />mapping</div>
               <i>→</i>
-              <div class="arch-core" data-i18n="home.arch3">Loyalty<br />intelligence</div>
+              <div class="arch-core" data-i18n="home.arch3">Calibrated model<br />+ SHAP</div>
               <i>→</i>
-              <div data-i18n="home.arch4">Personalized<br />actions</div>
+              <div data-i18n="home.arch4">Ranked list,<br />reasons, draft</div>
             </div>
             <div class="arch-lines">
               <span></span><span></span><span></span>
             </div>
           </div>
         </div>
-        <div class="metrics">
-          <div>
-            <strong>43<span>%</span></strong>
-            <p data-i18n="home.caseMetric1">faster response<br />to guest intent</p>
-          </div>
-          <div>
-            <strong>3.2<span>×</span></strong>
-            <p data-i18n="home.caseMetric2">more decisions<br />automated</p>
-          </div>
-          <div>
-            <strong>0</strong>
-            <p data-i18n="home.caseMetric3">customer data<br />leaves the estate</p>
-          </div>
-          <p class="metrics-note" data-i18n="home.metricsNote">
-            Sample outcomes shown for illustrative purposes.
-          </p>
+        <div class="claims">
+          <h3 data-i18n="home.claimsH3">What we don’t claim yet</h3>
+          <ul>
+            <li data-i18n="home.claim1">
+              We don’t have a field case study yet. EO-Churn is in pilot stage
+              and isn’t running at an institution today.
+            </li>
+            <li data-i18n="home.claim2">
+              The numbers in our demo come from synthetic data. They show the
+              pipeline works end to end — they are not the product’s accuracy.
+            </li>
+            <li data-i18n="home.claim3">
+              The real number comes from your data. Send two anonymized CSVs
+              and within two weeks you’ll see how many dropouts we would have
+              caught last term, and how many days early. If the result is
+              weak, we’ll say so just as clearly.
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -555,11 +658,12 @@
         <div class="contact-foot">
           <a class="brand" href="#top">EOAI <span>Lab</span></a
           ><span data-i18n="home.contactFootTag">Enterprise-Owned Artificial Intelligence</span
-          ><a href="mailto:info@eoailab.com">rizatalebi@eoailab.com</a
+          ><a href="mailto:info@eoailab.com">info@eoailab.com</a
           ><span>© 2026 EOAI Lab</span>
         </div>
       </section>
     </main>
+    <a class="to-top" href="#top" data-i18n-aria-label="home.toTopAria" aria-label="Back to top"><b>↑</b></a>
     <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>
